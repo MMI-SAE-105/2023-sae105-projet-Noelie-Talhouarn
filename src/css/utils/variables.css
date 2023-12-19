@@ -1,0 +1,17 @@
+:root {
+  /* Color styles */
+  --couleur-de-fond: rgba(255, 255, 255, 1);
+  --couleur-du-texte: rgba(0, 0, 0, 1);
+  --couleur-tonique: rgba(253, 120, 18, 1);
+  --couleur-secondaire: rgba(55, 54, 59, 1);
+
+  /* Text-size styles */
+  --h1: 50px;
+  --h2: 36px;
+  --h4: 19px;
+  --body: 15px;
+  --h5: 16px;
+  --h3: 30px;
+  --légende: 12px;
+}
+

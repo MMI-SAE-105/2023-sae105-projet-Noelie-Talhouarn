@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
-  <header>
-    <a class="header" href="/fr/index.html">
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
       <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
-      <ul>
-        <li><a href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
-        <li><a href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
-        <li><a href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
-        <li><a href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
-        <li><a href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/Hamburger.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-bind:class="{'menu--open': menuIsOpen}"
+      id="mainNav" 
+      class="menu"
+      >
+        
+    <img class="header__close" src="/public/icon/Close.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
       </ul>
+    </nav>
   </header>
 
     <button>
