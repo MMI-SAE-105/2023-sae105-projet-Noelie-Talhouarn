@@ -3,6 +3,26 @@
 
 /* Règles de layout */
 @import "layout/header.css";
-
+@import "layout/section.css";
+@import "layout/footer.css";
 /* règle de components */
 @import "components/menu.css";
+@import "components/accueil.css";
+@import "components/intro.css";
+
+/* Librairies */
+@import "vendors/normalize.css";
+
+/* Règles générales */
+@import "base/main.css";
+
+/* Polices de caractère */
+@font-face {
+    font-family: 'Bank Gothic';
+    src: url(/src/fonts/Bank-Gothic-Medium.otf);
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+@import url();

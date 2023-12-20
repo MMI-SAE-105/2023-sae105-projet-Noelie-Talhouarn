@@ -1,4 +1,9 @@
 .header {
     background: var(--couleur-secondaire, #37363B);
+    height: 92px;
+
+}
+
+.header__logo--menu{
     
 }
