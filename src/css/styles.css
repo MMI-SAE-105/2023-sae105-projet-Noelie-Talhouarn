@@ -22,7 +22,5 @@
     src: url(/src/fonts/Bank-Gothic-Medium.otf);
     font-weight: normal;
     font-style: normal;
-
-
 }
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
