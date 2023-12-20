@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+
 /* Variables */
 @import "utils/variables.css";
 
@@ -23,4 +28,3 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');

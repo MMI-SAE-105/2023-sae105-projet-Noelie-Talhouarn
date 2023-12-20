@@ -1,4 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 h1{
     font-family: 'bank gothic';
     
+}
+
+h4{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--couleur-secondaire);
+}
+
+h3{
+    font-family: 'Anek Gurmukhi';
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--couleur-tonique);
+}
+
+h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--couleur-secondaire);
+}
+
+a{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+}
+
+p{
+    font-family: 'Inter';
+    font-size: 15px;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
 }
