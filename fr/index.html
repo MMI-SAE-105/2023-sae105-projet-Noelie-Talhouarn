@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=1"/>
     <title>Page d'accueil</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="icon" href="/public/icon/logo-hope_games1.svg">
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
@@ -21,7 +21,7 @@
       class="header__menuBtn"
       >
       </a>
-      <nav x-bind:class="{'menu--open': menuIsOpen}"
+      <nav x-show="menuIsOpen" 
       id="mainNav" 
       class="menu"
       >
@@ -37,11 +37,6 @@
       </ul>
     </nav>
   </header>
-
-    <button>
-      <span> </span>
-    </button>
- 
     <main>
     <section class="section__intro">
       <article class="intro">

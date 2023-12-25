@@ -1,65 +1,25 @@
 .footer{
+    
     background-color: var(--couleur-secondaire, #37363B);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
 
 .footer__logo--mmi{
-    padding: 1rem;
+    
     margin-left: 10.5rem;
 }
 
 .footer__nav{
-    color: white;
-}
-
-.footer__nav-1{
-    margin: 3.5rem;
-    color: white;
-}
-
-.footer__nav-2{
-    margin: 3rem;
-    color: white;
-}
-
-.footer__nav-3{
-    margin: 4rem;
-    color: white;
-}
-
-.footer__nav-4{
-    margin: 3rem;
-    color: white;
-}
-
-.footer__element-1{
-    margin: 1.5rem;
-    color: white;
-}
-
-.footer__element-2{
-    color: white;
-}
-
-
-.footer__text{
-    text-align: center;
-    margin: 1rem;
-    margin-bottom: 0;
-    color: white;
-}
-
-.footer__text-2{
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    color: white;
+    padding: 1rem;
     
 }
+
+.footer__
+    
+
+
     
