@@ -4,3 +4,28 @@
     flex-shrink: 0;
     opacity: 0.4;
 }
+
+.intro__text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--couleur-secondaire);
+    padding: 1rem;
+    padding-bottom: 0;
+    
+}
+
+.intro__title{
+    color: white;
+}
+
+.intro__link{
+    color: white;
+}
+
+.intro__icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
