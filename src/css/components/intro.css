@@ -1,5 +1,6 @@
 .intro__img {
-    
-    height: 496px;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
     opacity: 0.4;
 }

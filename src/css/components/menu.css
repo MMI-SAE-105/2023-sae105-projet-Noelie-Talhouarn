@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
     height: 100vh;
     background: var(--couleur-secondaire); /* Couleur de fond opaque */
     display: grid;
@@ -54,7 +53,7 @@
 }
 
 .header__logo--menu{
-    width: 100px;
+    
     height: 50px;
 }
 
