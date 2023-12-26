@@ -1,15 +1,33 @@
-.intro__img {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-    opacity: 0.4;
+.intro{
+    background-color: var(--couleur-secondaire);
+    margin-top: 60px; 
 }
+
+
+.intro__img-container {
+    width: 100%;
+    position: relative;
+    opacity: 0.4;
+    margin-bottom: 10px;
+    
+}
+  
+  
+.intro__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+  }
 
 .intro__text{
     color: white;
     font-size: 20px;
     text-align: center;
-    background-color: var(--couleur-secondaire);
+    
     padding: 1rem;
     padding-bottom: 0;
     
@@ -17,10 +35,20 @@
 
 .intro__title{
     color: white;
+    text-align: center;
+    margin-bottom: -15px;
+    
+   
 }
 
 .intro__link{
     color: white;
+    font-family: 'fresca';
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    width: 90%; /* Ajouté pour augmenter la largeur du texte */
+    margin-top: -30px; /* Ajouté pour remonter le texte */
 }
 
 .intro__icon{

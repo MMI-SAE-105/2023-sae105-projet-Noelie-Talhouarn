@@ -1,5 +1,4 @@
 .footer{
-    
     background-color: var(--couleur-secondaire, #37363B);
     display: flex;
     flex-direction: column;

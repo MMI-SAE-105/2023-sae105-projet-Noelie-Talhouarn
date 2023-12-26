@@ -1,11 +1,17 @@
 .header {
     background: var(--couleur-secondaire, #37363B);
-    height: 92px;
+    height: auto;
+    padding: 0.5rem;
+    position: fixed; /* Ajouté */
+    width: 100%; /* Ajouté */
+    top: 0; /* Ajouté */
+    left: 0; /* Ajouté */
+    z-index: 1000; /* Ajouté */
 
 }
 
 .header__logo--menu{
-    
+    background-color: #37363B;
 }
 
 .header__logo--link{

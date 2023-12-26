@@ -50,7 +50,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 12px;
+    
 }
 
 .header__logo--menu{
