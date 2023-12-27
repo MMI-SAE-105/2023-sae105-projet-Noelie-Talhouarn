@@ -24,6 +24,7 @@
 
 /* Règles générales */
 @import "base/main.css";
+@import "base/media.css";
 
 /* Polices de caractère */
 @font-face {

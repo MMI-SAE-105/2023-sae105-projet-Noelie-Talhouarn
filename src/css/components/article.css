@@ -1,5 +1,5 @@
 .article{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .article__realisateur{
     padding: 1.3rem;
@@ -9,21 +9,14 @@
     
     width: 100%;
     
-    margin-top: 75px;
+    margin-top: 70px;
     margin-bottom: -15px;
 }
 
-.article__img{
-    height: 289px;
-    display: block;
-    margin: auto;
-    
-    
-}
+
 
 .article__title{
     margin-top: 25px;
-    text-align: center;
 }
 
 .article__info{
