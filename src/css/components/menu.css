@@ -6,7 +6,6 @@
     width: 100%;
     background: var(--couleur-secondaire); /* Couleur de fond opaque */
     display: grid;
-    transition: opacity 0.3s ease-in-out;
     place-content: center;
     z-index: 1;
     
