@@ -17,6 +17,7 @@
 @import "components/formulaire.css";
 @import "components/glossaire.css";
 @import "components/APropos.css";
+@import "components/article.css";
 
 /* Librairies */
 @import "vendors/normalize.css";

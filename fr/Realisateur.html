@@ -1,32 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gary Ross, une carrière étonnante</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="/fr/index.html">
-          <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
-        </a>
-          <ul>
-            <li><a href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
-            <li><a href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
-            <li><a href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
-            <li><a href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
-            <li><a href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
-          </ul>
-          <button>
-            <span></span>
-          </button>
-    </header> 
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__logo--link" href="/fr/index.html">
+        <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__close" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header> 
 <main>
-    <section>
-        <img src="/public/img/image-page-gary-ross/GaryRoss1.webp" alt="Gary Ross"/>
-        <p><em>Gary Ross en tournage</em></p> 
+    <section class="article">
+        <img class="article__intro" src="/public/img/image-page-gary-ross/GaryRoss1.webp" alt="Gary Ross"/>
+        <p class="article__text"><em>Gary Ross en tournage</em></p> 
         <p>Publié le 10 janvier 2024</p>
         <h3>Gary Ross : une carrière étonnante </h3>
         <p>De l'engagement politique à la réalisation cinématographique, Gary Ross a marqué l’univers du cinéma. Découvrez le parcours fascinant de ce cinéaste polyvalent.</p>  
@@ -34,7 +50,7 @@
     <section>
         <article>
             <h4>Une figure polyvalente</h4>
-            <img src="/public/img/image-page-gary-ross/GaryRoss2.webp" alt="Gary Ross"/>
+            <img class="article__img" src="/public/img/image-page-gary-ross/GaryRoss2.webp" alt="Gary Ross"/>
             <p><em>peeta mellark et katniss everdeen</em></p>
             <p>Gary Ross en tournage</p>
             <p>Né à Los Angeles en 1956, Gary Ross est une figure incontournable du monde du cinéma. Il est connu en tant que scénariste, producteur, réalisateur et acteur. Dès son enfance, il se retrouve plongé dans le monde du cinéma.</p>
@@ -46,7 +62,7 @@
         </article>
         <article>
             <h4>Ses débuts au cinéma</h4>
-            <img src="/public/img/image-page-gary-ross/GaryRoss3.webp" alt="Affiche du film Big"/>
+            <img class="article__img" src="/public/img/image-page-gary-ross/GaryRoss3.webp" alt="Affiche du film Big"/>
             <p><em>Affiche du film Big</em></p>
             <p>Sa carrière au cinéma débute en 1988 avec son premier film “Big”. Le film, coproduit avec Anne Spielberg, la sœur de Steven Spielberg, a remporté l'Oscar du meilleur scénario original et a rapporté la somme de 100 millions de dollars. Il a également été nominé pour un Golden Globe Award, un prix prestigieux décerné par la Hollywood Foreign Press Association.</p>
             <p>Gary Ross, à travers ses adaptations de films, a démontré une capacité à adapter des œuvres littéraires au cinéma en adaptant par exemple le film “Seabiscuit : An American Legend”, basé sur le livre de Laura Hillenbrand. Cependant, il doit son succès à l’adaptation de la trilogie "The Hunger Games" de Suzanne Collins.</p>
