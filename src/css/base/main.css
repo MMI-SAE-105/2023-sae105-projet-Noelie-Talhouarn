@@ -19,13 +19,12 @@ h4{
     font-weight: 700;
     font-size: 19px;
     color: var(--couleur-secondaire);
-    text-align: center;
 }
 
 h3{
     font-family: 'Anek Gurmukhi';
     font-weight: 800;
-    font-size: 43px;
+    font-size: 37px;
     color: var(--couleur-tonique);
 }
 

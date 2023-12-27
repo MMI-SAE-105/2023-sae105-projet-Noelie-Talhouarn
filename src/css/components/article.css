@@ -1,18 +1,47 @@
 .article{
-   padding: 1rem; 
+    margin-bottom: 20px;
 }
-
+.article__realisateur{
+    padding: 1.3rem;
+    margin-bottom: 20px;
+}
 .article__intro{
-    height: 353px;
+    
+    width: 100%;
     
     margin-top: 75px;
+    margin-bottom: -15px;
 }
 
 .article__img{
     height: 289px;
+    display: block;
+    margin: auto;
+    
     
 }
 
+.article__title{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.article__info{
+    margin-top: 20px;
+}
+
+.article__intertitre{
+    margin-bottom: 20px;
+}
+
+.article__legende{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: var(--couleur-secondaire);
+}
+
 .article__text{
-    padding: 1rem;
+    margin-top: 20px;
+    
 }
