@@ -44,6 +44,7 @@
   .formulaire__text{
       margin-top: 5%;
       margin-bottom: 10%;
+      font-size: 18px;
   }
   
   .formulaire__title{
@@ -51,7 +52,7 @@
     position: relative;
     text-align: center;
     margin-top: 80px;
-    border-bottom: 2px solid var(--couleur-tonique);
+    border-bottom: 3px solid var(--couleur-tonique);
     padding-bottom: 15px;
     margin-bottom: 20px;
       
@@ -65,7 +66,5 @@
     border: 1px solid #37363B;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
     
   }
