@@ -1,0 +1,25 @@
+.APropos{
+    margin-top: 80px;
+    padding: 1rem;
+}
+
+.APropos__title{
+    text-align: center;
+    border-bottom: 2px solid var(--couleur-tonique);
+    padding-bottom: 15px;
+}
+
+.APropos__img{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.APropos__text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}

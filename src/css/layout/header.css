@@ -1,7 +1,7 @@
 .header {
     background: var(--couleur-secondaire, #37363B);
     height: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     position: fixed; 
     width: 100%; 
     top: 0; 
