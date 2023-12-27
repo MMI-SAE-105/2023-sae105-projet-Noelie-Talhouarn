@@ -18,6 +18,7 @@
 @import "components/glossaire.css";
 @import "components/APropos.css";
 @import "components/article.css";
+@import "components/frise.css";
 
 /* Librairies */
 @import "vendors/normalize.css";
