@@ -1,7 +1,5 @@
 .formulaire {
     padding: 5%;
-    margin: auto; /* Centre le formulaire */
-    display: block; /* Permet le centrage horizontal */
   }
   
   .formulaire__textarea {
@@ -65,5 +63,9 @@
 
   .formulaire__groupe{
     border: 1px solid #37363B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
   }
