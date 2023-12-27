@@ -2,18 +2,31 @@
     background: var(--couleur-secondaire, #37363B);
     height: auto;
     padding: 0.5rem;
-    position: fixed; /* Ajouté */
-    width: 100%; /* Ajouté */
-    top: 0; /* Ajouté */
-    left: 0; /* Ajouté */
-    z-index: 1000; /* Ajouté */
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
 
 }
 
 .header__logo--menu{
-    background-color: #37363B;
+    margin-right: 25px;
+    height: 30px;
+
 }
+   
 
 .header__logo--link{
-    margin-bottom: 0;
+    
+}
+
+.header__close{
+    position: absolute;
+    height: 30px;
+    right: 17px;
+    top: 11px;
 }

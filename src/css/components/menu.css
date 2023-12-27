@@ -12,8 +12,6 @@
     
 }
 
-
-
 .menu--open {
     right: 0;
 }
@@ -23,12 +21,7 @@
     right: 0;
 }
 
-.header__close{
-    position: absolute; /* Ajouté - positionne l'élément par rapport à son conteneur le plus proche avec position: relative; ou position: absolute; */
-    right: 6%; /* Ajouté - positionne l'élément à droite du conteneur */
-    padding: 2%;
-    height: 60px;
-}
+
 
 .menu__list{
     display: flex;
@@ -47,22 +40,10 @@
     color: rgb(255, 255, 255);
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.header__logo--menu{
-    
-    height: 50px;
-}
-
-.header__menuBtn {
-    position: relative;
-    z-index: 10;
-}
-
 .no-scroll, .noscroll body {
     overflow: hidden;
+}
+
+.header__logo--link{
+     
 }
