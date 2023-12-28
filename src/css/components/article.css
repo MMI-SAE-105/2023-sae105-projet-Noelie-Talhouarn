@@ -39,3 +39,14 @@
     margin-bottom: 20px;
     
 }
+
+.article__img{
+    position: relative;
+}
+
+.article__icon{
+    position: absolute; /* Positionne l'icône de manière absolue par rapport au conteneur .article__image */
+    top: 50%; /* Centre l'icône verticalement */
+    left: 50%; /* Centre l'icône horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste la position de l'icône pour qu'elle soit centrée par rapport à son propre centre */
+}
