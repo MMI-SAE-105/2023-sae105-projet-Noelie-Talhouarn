@@ -1,83 +1,105 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the hanging tree</title>
-    <script src="//unpkg.com/alpinejs" defer></script>
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
-    <header>
-        <a href="/">
-          <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
-        </a>
-          <ul>
-            <li><a href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
-            <li><a href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
-            <li><a href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
-            <li><a href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
-            <li><a href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
-          </ul>
-          <button>
-            <span></span>
-          </button>
-   </header>
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__logo--link" href="/fr/index.html">
+        <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__close" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header>
 <main>
-    <section>
-        <img src="/public/img/image-page-music/the-hanging-tree1.webp" alt="Couverture Livre L'embrasement de suzanne collins"/>
-        <p><em>pochette de la musique the hanging tree</em></p>
-        <p>Publié le 10 janvier 2024</p>
-        <h3>The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</h3>
-        <p>De l'engagement politique à la réalisation cinématographique, Gary Ross a marqué l’univers du cinéma. Découvrez le parcours fascinant de ce cinéaste polyvalent.</p>  
-    </section>
-    <section>
-        <article>
-            <h4>La naissance de « the hanging tree »</h4>
-            <p>La chanson “the hanging tree” apparaît dans la première partie d’Hunger Games La révolte. Elle signifie « l’arbre du pendu ». Les paroles ont été écrites par Suzanne Collins, l’auteure du livre. Par la suite, elles ont été mises en musique lors de l’adaptation cinématographique par James Newton Howard. Cette chanson est interprétée dans le film par Jennifer Lawrence. </p>
+        <img class="article__intro" src="/public/img/image-page-music/the-hanging-tree1.webp" alt="Couverture Livre L'embrasement de suzanne collins"/>
+      <section class="section__article">
+        <article class="article">
+            <p class="article__legende"><em>pochette de la musique the hanging tree</em></p>
+            <p class="article__info">Publié le 10 janvier 2024</p>
+            <h3 class="article__title">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</h3>
+            <p class="article__text">De l'engagement politique à la réalisation cinématographique, Gary Ross a marqué l’univers du cinéma. Découvrez le parcours fascinant de ce cinéaste polyvalent.</p>  
+        </article>
+        <article class="article">
+            <h4 class="article__intertitre">La naissance de « the hanging tree »</h4>
+            <p class="article__text">La chanson “the hanging tree” apparaît dans la première partie d’Hunger Games La révolte. Elle signifie « l’arbre du pendu ». Les paroles ont été écrites par Suzanne Collins, l’auteure du livre. Par la suite, elles ont été mises en musique lors de l’adaptation cinématographique par James Newton Howard. Cette chanson est interprétée dans le film par Jennifer Lawrence. </p>
             <a href="https://open.spotify.com/intl-fr/track/416MsJxvxSKY96DCmbJIRs">
                 <img src="/public/img/image-page-music/the-hanging-tree2.webp"  alt="pochette de musique the hanging tree"/>
             </a>
-            <p><em>Pochette de la musique “The Hanging tree”</em></p>
+            <p class="article__legende"><em>Pochette de la musique “The Hanging tree”</em></p>
         </article>
-        <article>
-            <h4>Katniss et la Révolte</h4>
-            <p>Katniss se met à chanter au milieu d’une rébellion naissante contre le capitole oppressif. Elle l’utilise comme un signal aux citoyens pour qu’ils se joignent à la cause. Les paroles de la chanson racontent l'histoire d'un arbre où un homme a été pendu, cherchant justice pour ses concitoyens opprimés. L'arbre lui-même est devenu un symbole de défi et de résistance.</p>
+        <article class="article">
+            <h4 class="article__intertitre">Katniss et la Révolte</h4>
+            <p class="article__text">Katniss se met à chanter au milieu d’une rébellion naissante contre le capitole oppressif. Elle l’utilise comme un signal aux citoyens pour qu’ils se joignent à la cause. Les paroles de la chanson racontent l'histoire d'un arbre où un homme a été pendu, cherchant justice pour ses concitoyens opprimés. L'arbre lui-même est devenu un symbole de défi et de résistance.</p>
         </article>
-        <article>
+        <article class="article">
             <h4>L'Émotion de Jennifer Lawrence</h4>
-            <p>L’actrice s’est confiée « je n’aime pas chanter devant d‘autres personnes. C’est ma plus grande peur, j’ai pleuré sur le plateau ce jour-là, c’était horrible ». En effet, lors de son interprétation, sa voix est rauque et discrète ce qui ajoute une dimension réaliste et émotionnelle à la chanson.</p>
+            <p class="article__text">L’actrice s’est confiée « je n’aime pas chanter devant d‘autres personnes. C’est ma plus grande peur, j’ai pleuré sur le plateau ce jour-là, c’était horrible ». En effet, lors de son interprétation, sa voix est rauque et discrète ce qui ajoute une dimension réaliste et émotionnelle à la chanson.</p>
         </article>
-        <article>
-            <h4>La musique comme forme de résistance</h4>
-            <p>Cette chanson s’est rapidement transformée en chant de guerre permettant de rallier tous les partisans de la révolte contre Panem. Elle transmet un message puissant et exprime un sentiment de liberté. La chanson est captivante par sa capacité à évoquer des émotions profondes et à transmettre un sentiment de rébellion et d’espoir.</p>
+        <article class="article">
+            <h4 class="article__intertitre">La musique comme forme de résistance</h4>
+            <p class="article__text">Cette chanson s’est rapidement transformée en chant de guerre permettant de rallier tous les partisans de la révolte contre Panem. Elle transmet un message puissant et exprime un sentiment de liberté. La chanson est captivante par sa capacité à évoquer des émotions profondes et à transmettre un sentiment de rébellion et d’espoir.</p>
             <img src="/public/img/image-page-music/the-hanging-tree3.webp" alt="Katniss Everdeen au combat"/>
-            <p><em>Katniss Everdeen au combat</em></p>
-            <p>De plus, The Hanging Tree met l’accent sur le pouvoir de la musique comme forme de résistance. Elle montre comment une simple chanson peut être un outil puissant pour unir les gens et les inciter à lutter contre l’injustice. Dans le contexte de The Hunger Games, Le Capitole utilise les jeux comme moyen de contrôle et de divertissement, et la musique comme moyen de résistance.</p>
+            <p class="article__legende"><em>Katniss Everdeen au combat</em></p>
+            <p class="article__text">De plus, The Hanging Tree met l’accent sur le pouvoir de la musique comme forme de résistance. Elle montre comment une simple chanson peut être un outil puissant pour unir les gens et les inciter à lutter contre l’injustice. Dans le contexte de The Hunger Games, Le Capitole utilise les jeux comme moyen de contrôle et de divertissement, et la musique comme moyen de résistance.</p>
         </article>
-        <article>
-            <h4>Un Hymne Universel de Résistance</h4>
-            <p>Cette chanson est devenue célèbre et emblématique au sein de la communauté Hunger Games. La popularité de la chanson dépasse les limites de l'univers Hunger Games. Elle a touché le monde entier, devenant un succès en tête des classements et un phénomène culturel à part entière. "The Hanging Tree" n'est pas seulement une chanson ; c'est un symbole de résistance.</p>
+        <article class="article">
+            <h4 class="article__intertitre">Un Hymne Universel de Résistance</h4>
+            <p class="article__text">Cette chanson est devenue célèbre et emblématique au sein de la communauté Hunger Games. La popularité de la chanson dépasse les limites de l'univers Hunger Games. Elle a touché le monde entier, devenant un succès en tête des classements et un phénomène culturel à part entière. "The Hanging Tree" n'est pas seulement une chanson ; c'est un symbole de résistance.</p>
         </article>
     </section>
 </main>
 
-<footer>
-  <ul>
-    <li><a href="A-propos.html">A propos</a></li>
-      <li><a href="/fr/replique.html">Autres projets</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="glossaire.html">Glossaire</a></li>
-      <li>Noélie Talhouarn B1</li>
-    </ul>
-      <a href="mailto:noelie.tlh@gmail.com">
-          noelie.tlh@gmail.com
-      </a>
-      <p>Mention légale “projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard”</p>
-      <a href="https://butmmi.thomasjeu.fr/#/butmmi">
-        <img src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
-      </a>
+<footer class="footer">
+  <div class="footer__nav">
+      <a class="footer__nav" href="/fr/A-propos.html">A propos</a>
+      <a class="footer__nav" href="/fr/replique.html">Autres projets</a>
+  </div>
+  <div class="footer__nav">
+      <a class="footer__nav" href="contact.html">Contact</a>
+      <a class="footer__nav" href="glossaire.html">Glossaire</a> 
+  </div>
+  <div class="footer__element">
+    <a class="footer__element" href="/fr/A-propos.html">Noélie Talhouarn B1</li>
+    <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
+      noelie.tlh@gmail.com
+    </a>
+  </div>
+  <div class="footer__text">
+  <p class="footer__text"><strong>Mention légale</strong> </p>
+  <p class="footer__text">"projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard”</p>
+  <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+    <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+  </a>
+  </div>
 </footer>
 </body>
 </html>
