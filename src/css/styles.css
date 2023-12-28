@@ -19,6 +19,7 @@
 @import "components/APropos.css";
 @import "components/article.css";
 @import "components/frise.css";
+@import "components/carrousel.css";
 
 /* Librairies */
 @import "vendors/normalize.css";
