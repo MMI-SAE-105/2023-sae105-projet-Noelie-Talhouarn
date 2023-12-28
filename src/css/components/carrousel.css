@@ -1,0 +1,103 @@
+
+.carrousel img {
+    max-width: 100%; /* image responsive, largeur maxi */
+    height: 380px; /* hauteur "auto" */
+    
+
+}
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll; /* permet de scroller horizontalement */
+    scroll-behavior: smooth; /* animation de défilement */
+    scroll-snap-type: x mandatory; /* permet de scroller par blocs */
+}
+.carrousel_ecran {
+    width: 100%; /* largeur du parent pour chaque enfant */
+    flex: none;  /* permet de garder toute la largeur du parent */
+    scroll-snap-align: start; /* aligne les enfants par blocs */
+    margin-bottom: 23px;
+    
+}
+.carrousel_ecran figure {
+    margin: 0; /* enlève les marges par défaut */
+    display: flex; /* permet de mettre les enfants sur une ligne */
+    align-items: center; /* centre verticalement les enfants */
+    flex-direction: column; /* aligne les enfants verticalement */
+    text-decoration: none; /* enlève le soulignement par défaut */
+    color: rgb(6, 6, 6); /* couleur du texte */
+    background-color: rgb(255, 255, 255);
+    gap: 0.5rem; /* espace entre les enfants */
+}
+.carrousel {
+  position: relative;
+  margin-top: 30px;
+  
+}
+
+.carrousel_btn {
+  position: absolute;
+  top: 50%;
+  top: calc(
+    min(400px, 100vw) / 16 * 9 / 2 + 5rem
+  ); /* centre verticalement ~50% vertical */
+  transform: translateY(-50%); /* methode du point mort */
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(237, 229, 229);
+  border-radius: 35%;
+  display: grid;
+  place-content: center;
+  color: #ffffff;
+}
+
+.carrousel_btn-avant {
+  left: 25px;
+}
+
+.carrousel_btn-apres {
+  right: 25px;
+}
+.caroussel_liste-liens {
+    display: flex; /* aligne horizontalement les enfants */
+    justify-content: center; /* centre horizontalement les enfants */
+    flex-wrap: wrap; /* permet aux enfants de se déplacer sur une nouvelle ligne si nécessaire */
+    margin: 0; /* enlève les marges par défaut */
+    padding: 0; /* enlève les padding par défaut */
+    list-style: none; /* enlève les puces par défaut */
+    gap: 1rem; /* espace entre les enfants */
+    margin-bottom: 13%;
+    font-family: 'inter', sans-serif;
+}
+
+ .carrousel_lien{
+    padding: 0.5rem; /* padding haut/bas et gauche/droite */
+    background-color: var(--couleur-secondaire);
+    border-radius: 0.5rem; /* arrondi les coins */
+    text-decoration: none; /* enlève le soulignement par défaut */
+    color: rgb(0, 0, 0); /* couleur du texte */
+    font-size: 1rem; /* taille du texte */
+    font-weight: 500; /* graisse du texte */
+    
+ }
+
+    
+.actif {
+  padding: 0.5rem;
+  text-decoration: none; /* enlève le soulignement par défaut */
+  color: rgb(0, 0, 0); /* couleur du texte */    
+}
+
+.carrousel__sous-titre{
+  font-family: 'roboto';
+  font-size: 23px;
+  padding: 5%;
+  background-color: var(--couleur-secondaire);
+}
+
+.carrousel__text{
+  font-family: 'inter';
+  font-size: 16px;
+  padding: 3%;
+}
