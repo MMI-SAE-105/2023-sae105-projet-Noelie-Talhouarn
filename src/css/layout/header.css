@@ -15,18 +15,10 @@
 
 .header__logo--menu{
     margin-right: 2.3rem;
-    height: 30px;
-    margin-top: -50px;
-
-}
-.header__logo{
-    height: 38px;
-}   
-
-.header__logo--link{
-    padding: 1rem;
     
+
 }
+
 
 
 
@@ -40,8 +32,10 @@
 }
 
 .header__menu--iconClose{
-    top: 0;
+    margin-right: 1.3rem;
+    top: 20px;
     right: 0;
-    padding: 1rem;
+    
     position: fixed; 
+    height: 33px;
 }
