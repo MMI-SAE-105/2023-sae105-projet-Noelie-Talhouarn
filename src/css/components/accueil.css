@@ -12,7 +12,7 @@
     padding: 15px 40px;
     border-radius: 30px;
 
-    margin-top:.5rem;
+    margin-top:1.2rem;
 }
 
 .accueil {
@@ -20,5 +20,5 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4rem;
 }
