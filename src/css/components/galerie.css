@@ -1,20 +1,74 @@
-.galerie {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-    padding: 20px;
-    
-  }
+.overlay {
+  width: 100vw;/* Full width (cover the whole page) */
+  height: 100vh;/* Full height (cover the whole page) */
+  top: 0;/* Stay at the top */
+  left: 0;/* Stay at the left */
+  right: 0;/* Stay at the right */
+  bottom: 0;/* Stay at the bottom */
+  background-color: rgba(55, 54, 59, 0.95); /* fond gris avec 50% d'opacité */
+  position: fixed;
+  cursor: pointer;/* Add a pointer on hover */
+  display: grid; /* Use a grid for easy centering */
+  place-content: center;/* Center vertically and horizontally */
+  rgba(55, 54, 59, 0.5); /* fond gris avec 50% d'opacité */
+}
+.overlay::after {
+  content: "X";/* Add content : "X" */ 
+  color: rgb(0, 0, 0);/* White text color */
+  background-color: var(--couleur-secondaire);/* Black background color */
+  font-family: sans-serif;/* Font family "sans-serif" */
+  text-align: center;/* Centered text */
+  line-height: 2rem;/* Line height ( idem height ) */
+  display: block ;/* Display as a block */
+  position: absolute;/* Position absolute */
+  top: 1rem;/* 1rem from the top */
+  right: 1rem;/* 1rem from the right */
+  width: 2rem;/* 2rem width */
+  height: 2rem;/* 2rem height */
+  border: 2px solid rgb(0, 0, 0);/* White border of 2px */
+  border-radius: 50%;/* Rounded border */
+  
+}
 
-  .galerie__content {
-    display: flex;
+.overlay>figure {
+  margin: 0;/* No margin */
+  padding: 1rem;/* 1rem padding */
+  border: 2px solid rgb(0, 0, 0);/* White border of 2px */
+}
+
+.overlay>figure>img {
+  max-width: 100%;/* Max width 100% for responsive image */
+  height: auto;/* Height auto for keeping the ratio */
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+
+
+
+.galerie__content {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center; /* Ajouté - aligne les éléments enfants verticalement */
+}
+
+.image__container {
+  flex: 1 0 auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
     
 
   .galerie__img {
-    
+    display: block;
+  max-width: 100%;
+  height: auto;
     margin: 10px;
     padding: 3px;
     border: 2px solid black;
