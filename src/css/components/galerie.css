@@ -10,7 +10,7 @@
   cursor: pointer;/* Add a pointer on hover */
   display: grid; /* Use a grid for easy centering */
   place-content: center;/* Center vertically and horizontally */
-  rgba(55, 54, 59, 0.5); /* fond gris avec 50% d'opacité */
+  
 }
 .overlay::after {
   content: "X";/* Add content : "X" */ 
@@ -41,40 +41,24 @@
   height: auto;/* Height auto for keeping the ratio */
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
-
-
-
-
-
-.galerie__content {
+.galerie{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center; /* Ajouté - aligne les éléments enfants verticalement */
-}
-
-.image__container {
-  flex: 1 0 auto;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
     
 
   .galerie__img {
-    display: block;
-  max-width: 100%;
-  height: auto;
-    margin: 10px;
+    
+    padding: 1rem;
+    margin: 1rem;
     padding: 3px;
     border: 2px solid black;
     
     transition: transform 0.3s ease-in-out;
   }
+
+  
   
   .galerie__img:hover {
     transform: scale(1.05);
@@ -89,4 +73,10 @@ body.no-scroll {
   .URLimage img {
     width: 100%;
     height: auto;
+  }
+
+  .galerie__legende {
+    font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
   }
