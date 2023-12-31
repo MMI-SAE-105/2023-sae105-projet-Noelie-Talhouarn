@@ -1,21 +1,27 @@
+.galerie{
+  position: relative;
+}
+
+
 .overlay {
+  position: absolute;/* Sit on top of the page content */
   width: 100vw;/* Full width (cover the whole page) */
   height: 100vh;/* Full height (cover the whole page) */
   top: 0;/* Stay at the top */
   left: 0;/* Stay at the left */
   right: 0;/* Stay at the right */
-  bottom: 0;/* Stay at the bottom */
-  background-color: rgba(55, 54, 59, 0.95); /* fond gris avec 50% d'opacité */
-  position: fixed;
-  cursor: pointer;/* Add a pointer on hover */
-  display: grid; /* Use a grid for easy centering */
-  place-content: center;/* Center vertically and horizontally */
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 16, 16, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .overlay::after {
   content: "X";/* Add content : "X" */ 
-  color: rgb(0, 0, 0);/* White text color */
-  background-color: var(--couleur-secondaire);/* Black background color */
+  color: white;/* White text color */
+  background-color: black;/* Black background color */
   font-family: sans-serif;/* Font family "sans-serif" */
   text-align: center;/* Centered text */
   line-height: 2rem;/* Line height ( idem height ) */
@@ -25,7 +31,7 @@
   right: 1rem;/* 1rem from the right */
   width: 2rem;/* 2rem width */
   height: 2rem;/* 2rem height */
-  border: 2px solid rgb(0, 0, 0);/* White border of 2px */
+  border: 2px solid white;/* White border of 2px */
   border-radius: 50%;/* Rounded border */
   
 }
@@ -33,50 +39,42 @@
 .overlay>figure {
   margin: 0;/* No margin */
   padding: 1rem;/* 1rem padding */
-  border: 2px solid rgb(0, 0, 0);/* White border of 2px */
+  border: 2px solid white;/* White border of 2px */
 }
 
 .overlay>figure>img {
   max-width: 100%;/* Max width 100% for responsive image */
   height: auto;/* Height auto for keeping the ratio */
 }
-
-.galerie{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.titre {
+  text-align: center;  
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  background-color: var(--couleur-tonique);
+  margin: 0;
 }
-    
+.image {
+  
+  margin: 1rem;
+  padding: 3px;
+  border: 2px solid black;
 
-  .galerie__img {
-    
-    padding: 1rem;
-    margin: 1rem;
-    padding: 3px;
-    border: 2px solid black;
-    
-    transition: transform 0.3s ease-in-out;
-  }
+}
 
+.galerie__container-1{
+  padding: 20px;
   
-  
-  .galerie__img:hover {
-    transform: scale(1.05);
-  }
-  
-  .URLimage {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-  
-  .URLimage img {
-    width: 100%;
-    height: auto;
-  }
+}
 
-  .galerie__legende {
-    font-size: 14px;
+.image-container {
   text-align: center;
-  margin-top: 10px;
-  }
+}
+
+.image-text {
+  margin-top: -20px;
+}
+
+
+  
+
+  
