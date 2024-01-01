@@ -7,19 +7,17 @@
     background: var(--couleur-secondaire); /* Couleur de fond opaque */
     display: grid;
     place-content: center;
-    z-index: 1;
+    z-index: 10;
+
+    right: -100%;
+    transition: right 0.3s ease-in-out;
     
 }
 
 .menu--open {
+    
     right: 0;
 }
-
-.menu--open {
-    position: absolute;
-    right: 0;
-}
-
 
 
 .menu__list{

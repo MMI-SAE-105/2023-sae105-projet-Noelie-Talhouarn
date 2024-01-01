@@ -1,6 +1,8 @@
 .accueil__img{
     
     height: 333px;
+    padding: 10px;
+    border: 2px solid var(--couleur-secondaire);
     
 }
 
