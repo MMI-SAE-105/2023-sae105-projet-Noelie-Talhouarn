@@ -49,7 +49,7 @@
     font-size: 36px;
     text-align: center;
     width: 90%; /* Ajouté pour augmenter la largeur du texte */
-    margin-top: -30px; /* Ajouté pour remonter le texte */
+    margin-top: auto; /* Ajouté pour remonter le texte */
 }
 
 .intro__icon{

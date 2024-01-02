@@ -46,7 +46,9 @@
 
 .article__icon{
     position: absolute; /* Positionne l'icône de manière absolue par rapport au conteneur .article__image */
-    top: 50%; /* Centre l'icône verticalement */
+    
+    margin-top: -200px;
+    height: 100px;
     left: 50%; /* Centre l'icône horizontalement */
     transform: translate(-50%, -50%); /* Ajuste la position de l'icône pour qu'elle soit centrée par rapport à son propre centre */
 }
