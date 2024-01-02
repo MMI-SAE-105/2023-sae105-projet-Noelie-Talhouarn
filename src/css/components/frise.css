@@ -1,27 +1,32 @@
 .frise {
-    margin-top: ;
+    
     position: relative;
     padding: 20px;
+    margin-left: 50px;
+    
   }
   
   .frise__arrow {
-    height: 960px;
+    margin-top: 80px;
+    height: 1070px;
     position: absolute;
     left: 60px;
-    top: 90px;
+    top: 120px;
     bottom: 0;
     width: 0;
     border-left: 2px solid #000000; /* Crée une bordure à gauche pour la flèche */
   }
+  
 
   .frise__event::before {
     content: "";
     position: absolute;
     left: 40px; /* Positionne le trait à gauche de l'événement */
     top: 15px;
-    width: 100px; /* Largeur du trait */
+    width: 60px; /* Largeur du trait */
     border-top: 2px solid #000000; /* Crée un trait horizontal */
   }
+  
   .frise__event {
     
     position: relative;
@@ -32,22 +37,42 @@
   }
   
   .frise__date {
-    background: #ccc;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  align-self: flex-start; /* Aligne les dates à gauche */
+  font-family: 'inter', sans-serif;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  background: var(--couleur-tonique);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: -20px; /* Ajoute une marge à gauche */
   }
   
   .frise__text {
-    font-size: 13px;
+    font-size: 15px;
     text-align: left;
-    margin: 0;
-  }
+    margin-top: -25px;
+    margin-left: 95px;
+    width: 200px; /* Définit une largeur spécifique pour le texte */
+}
+  
   
   .frise__img {
-    width: 100px;
+    width: 120px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 
-  
+  .frise__title{
+    margin-left: -50px;
+    margin-bottom: 40px;
+  }
+
+  .frise__intro{
+    margin-top: 60px;
+    position: relative;
+    top: -40px; /* Remonte le texte d'introduction */
+    
+    margin-left: -47px;
+  }
