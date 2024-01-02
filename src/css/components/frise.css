@@ -2,7 +2,7 @@
     
     position: relative;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
     
   }
   
@@ -52,8 +52,8 @@
     font-size: 15px;
     text-align: left;
     margin-top: -25px;
-    margin-left: 95px;
-    width: 200px; /* Définit une largeur spécifique pour le texte */
+    margin-left: 100px;
+    width: 180px; /* Définit une largeur spécifique pour le texte */
 }
   
   
@@ -61,11 +61,11 @@
     width: 120px;
     height: auto;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .frise__title{
-    margin-left: -50px;
+    margin-left: -30px;
     margin-bottom: 40px;
   }
 
@@ -74,5 +74,5 @@
     position: relative;
     top: -40px; /* Remonte le texte d'introduction */
     
-    margin-left: -47px;
+    margin-left: -30px;
   }
