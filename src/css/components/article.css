@@ -52,3 +52,17 @@
     left: 50%; /* Centre l'icône horizontalement */
     transform: translate(-50%, -50%); /* Ajuste la position de l'icône pour qu'elle soit centrée par rapport à son propre centre */
 }
+
+.article__video{
+    overflow:hidden;
+ padding-bottom:56.25%; 
+ position:relative;
+ height:0;
+}
+.article__video iframe {
+ left:0;
+ top:0;
+ height:100%;
+ width:100%;
+ position:absolute;
+}

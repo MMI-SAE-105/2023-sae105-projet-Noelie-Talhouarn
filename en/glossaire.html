@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__menu--icon" href="/fr/index.html">
+        <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+      <div class="glossaire">
+        <h3 class="glossaire__title">Glossary</h3>
+        <article class="glossaire__article">
+            <h4 class="glossaire__intertitre">The capitol</h4>
+            <p class="glossaire__text">Capitol Hill is the capital of Panem. It's a technologically advanced city where
+              the nation's richest and most powerful people live.
+              </p>
+        </article>
+        <article class="glossaire">
+            <h4 class="glossaire__intertitre">Katniss Everdeen</h4>
+            <p class="glossaire__text">Katniss Everdeen is the heroine of the Hunger Games trilogy. During the
+              Harvest of the 74th Hunger Games, her little sister, Prim, is drawn. To save her
+              from certain death, Katniss volunteers in her place.
+              </p>
+        </article>
+        <article class="glossaire">
+            <h4 class="glossaire__intertitre">Peeta Mellark</h4>
+            <p class="glossaire__text">Peeta Mellark is the main male character in the Hunger Games saga. He is
+              played in the films by Josh Hutcherson.</p>
+        </article>
+      </div> 
+    </main>
+    <footer class="footer">
+      <div class="footer__nav">
+          <a class="footer__nav" href="/en/A-propos.html">About us</a>
+          <a class="footer__nav" href="replique.html#galerie-en">Others projects</a>
+      </div>
+      <div class="footer__nav">
+          <a class="footer__nav" href="/en/contact.html">Contact</a>
+          <a class="footer__nav" href="/en/glossaire.html">Glossary</a> 
+      </div>
+      <div class="footer__element">
+        <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+        <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
+          noelie.tlh@gmail.com
+        </a>
+      </div>
+      <div class="footer__text">
+      <p class="footer__text"><strong>Legal notice</strong> </p>
+      <p class="footer__text">"project carried out as part of an educational exercise at the MMi department in Montbéliard, France”</p>
+      <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+        <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

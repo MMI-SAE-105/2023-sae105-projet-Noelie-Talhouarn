@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__menu--icon" href="/fr/index.html">
+        <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+       <img class="article__intro" src="/public/img/image-page-livre/L'embrasement1.webp" alt="Couverture Livre L'embrasement de suzanne collins"/>
+    <section class="section__article">
+      <article class="article">
+        <p class="article__legende"><em>Couverture du livre L'embrasement de suzanne collins</em></p>
+        <p class="article__info">Publié le 10 janvier 2024</p>
+        <h3 class="article__title">The Hunger Games: Catching Fire - The Explosive Sequel to
+          Katniss's Epic”</h3>
+        <p class="article__text">Hunger Games, Catching Fire, is the second volume in Suzanne Collins' Hunger Games
+          trilogy. It was published in 2009. It follows on from the first volume of the trilogy, which
+          continues the story of Katniss. It reintroduces Katniss Everdeen, the heroine and narrator of
+          the novel, and Peeta Mellark.</p>  
+      </article>
+    
+      <article>
+            <h4 class="article__intertitre">Un petit résumé</h4>
+            <img src="/public/img/image-page-livre/L'embrasement2.webp" alt="4ème couverture du livre Hunger Games l'embrasement"/>
+            <p class="article__legende"><em>4ème couverture du livre l'embrasement</em></p>
+            <p class="article__text">Après avoir défié le capitole, Katniss est devenu le symbole d’une rébellion qui pourrait atteindre tout Panem. Elle doit maintenant ramener le calme dans les districts car sinon le capitole entend bien utiliser sa méthode habituelle : la terreur.</p>
+      </article>
+      <article class="article">
+            <h4 class="article__intertitre">A profound message</h4>
+            <p class="article__text">"Hunger Games: The Catching of fire" explores themes such as surveillance, propaganda, injustice,
+              revolt and the fight for freedom. It plunges readers into a dark and dangerous world, where
+              they must fight to live.
+              Suzanne Collins reflects on the nature of society, the power of oppression and the role of
+              resistance. The trilogy as a whole is a representation of the struggle against oppression and
+              the search for freedom.
+              </p>
+            <img src="/public/img/image-page-livre/L'embrasement3.webp" alt="Suzanne Collins"/>
+            <p class="article__legende"><em>Suzanne Collins</em></p>
+            <p class="article__text">Suzanne Collins offre une réflexion sur la nature de la société, le pouvoir de l'oppression et le rôle de la résistance. La trilogie dans son ensemble est une représentation de la lutte contre l'oppression et la recherche de la liberté.</p>
+      </article>
+      <article class="article">
+            <h4 class="article__intertitre">The Fight for Freedom</h4>
+            <p class="article__text">This second volume explores Katniss's struggle for survival and her quest for justice. She
+              must face up to the consequences of her actions during the last Hunger Games. Her
+              relationship with Peeta Mellark, her fellow tribesman and Games ally, becomes more
+              complex. The Capitol tries to punish any sign of revolt.</p>
+      </article>
+      <article class="article">
+            <h4 class="article__intertitre">Film adaptation</h4>
+            <img src="/public/img/image-page-livre/L'embrasement4.webp" alt="Affiche du film Hunger Games, l'embrasement"/>
+            <p class="article__legende"><em>Affiche du film Hunger Games, l’embrasement</em></p>
+            <p class="article__text">It was adapted into a film and released in cinemas on November 27, 2013. This made it
+              easier for readers to project themselves into the Hunger Games universe and bring the
+              characters to life.</p>
+            <p class="article__text">"L'Embrasement" takes us on a thrilling adventure, while challenging you to
+              reflect on the themes of freedom, hope and the struggle for a better world.
+              </p>
+      </article>
+      <article class="article">
+            <h4 class="article__intertitre">Hunger Games, a tale of adventure and rebellion</h4>
+            <p class="article__text">If you like tales of rebellion and adventure, "Hunger Games, l'Embrasement" is for you and
+              should be read immediately if you haven't already. The book examines the effects of
+              rebellion and resistance while highlighting the importance of being united in the fight against
+              oppression. 
+              </p>
+            <p class="article__text">"Catching Fire" nous entraîne dans une aventure palpitante, tout en vous poussant à réfléchir sur les thèmes de la liberté, de l'espoir et de la lutte pour un monde meilleur.</p>
+      </article>
+    </section>
+    <div class="frise">
+      <div class="frise__arrow"></div> 
+      <h3 class="frise__title">Les livres de Suzanne Collins</h3>
+      <p class="frise__intro">Voici les différents livres de Suzanne Collins par ordre chronologique </p>
+      <div class="frise__event">
+        <div class="frise__date">2008</div>
+        <p class="frise__text">Hunger Games, tome 1</p>
+        <img class="frise__img" src="/public/img/image-page-livre/ImageFrise1.webp" alt="Couverture du livre Hunger Games"/>
+      </div>
+      <div class="frise__event">
+        <div class="frise__date">2009</div>
+        <p class="frise__text">Hunger Games, l’Embrasement tome 2</p>
+        <img class="frise__img" src="/public/img/image-page-livre/ImageFrise2.webp" alt="Couverture du livre Hunger Games, l'embrasement"/>
+      </div>
+      <div class="frise__event">
+        <div class="frise__date">2010</div>
+        <p class="frise__text">Hunger Games, La Révolte tome 3</p>
+        <img class="frise__img" src="/public/img/image-page-livre/ImageFrise3.webp" alt="Couverture du livre Hunger Games, la révolte"/>
+      </div>
+      <div class="frise__event">
+        <div class="frise__date">2020</div>
+        <p class="frise__text">Hunger Games, La Ballade du serpent et de l'oiseau chanteur</p>
+        <img class="frise__img" src="/public/img/image-page-livre/ImageFrise4.webp" alt="Couverture du livre Hunger Games, la ballade du serpent et de l'oiseau chanteur"/>
+      </div>
+    </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__nav">
+      <a class="footer__nav" href="/en/A-propos.html">About us</a>
+      <a class="footer__nav" href="replique.html#galerie-en">Others projects</a>
+  </div>
+  <div class="footer__nav">
+      <a class="footer__nav" href="/en/contact.html">Contact</a>
+      <a class="footer__nav" href="/en/glossaire.html">Glossary</a> 
+  </div>
+  <div class="footer__element">
+    <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+    <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
+      noelie.tlh@gmail.com
+    </a>
+  </div>
+  <div class="footer__text">
+  <p class="footer__text"><strong>Legal notice</strong> </p>
+  <p class="footer__text">"project carried out as part of an educational exercise at the MMi department in Montbéliard, France”</p>
+  <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+    <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+  </a>
+</div>
+</footer>
+</body>
+</html>

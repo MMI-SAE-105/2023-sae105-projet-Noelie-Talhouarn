@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo--link" href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__menu--icon" href="/fr/index.html">
+        <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header> 
+<main>
+    <img class="article__intro" src="/public/img/image-page-gary-ross/GaryRoss1.webp" alt="Gary Ross"/>
+  
+  <section class="section__article">
+    <article class="article">
+        <p class="article__legende"><em>Gary Ross en tournage</em></p> 
+        <p class="article__info">Publié le 10 janvier 2024</p>
+        <h3 class="article__title">Gary Ross: an astonishing career</h3>
+        <p class="article__text">From political activism to filmmaking, Gary Ross has left his mark on the world of cinema.
+          Discover the fascinating career of this versatile filmmaker.</p>  
+    </article>
+    <article class="article">
+        <h4 class="article__intertitre">A versatile figure</h4>
+        <img class="article__img" src="/public/img/image-page-gary-ross/GaryRoss2.webp" alt="Gary Ross"/>
+        <p class="article__legende"><em>Gary Ross en tournage</em></p>
+        <p>Born in Los Angeles in 1956, Gary Ross is a key figure in the world of cinema. He is known
+          as a screenwriter, producer, director and actor. From this childhood , he was immersed in
+          the world of cinema.
+          </p>
+      </article>
+      <article class="article">
+          <h4 class="article__intertitre">His political commitment</h4>
+          <p>Before entering the film industry, he tried his hand at other jobs, such as fishing. After
+            entering the world of cinema, he quickly turned to politics. In 1972, he worked for a
+            congressman, demonstrating his involvement in politics from the outset. He worked on three
+            different presidential campaigns. He participated in Ted Kennedy’s failed presidential
+            campaign. In 1992, he also participated in the successful election of Bill Clinton. He has
+            written speeches and jokes for two politicians, Michael Dukakis and Bill Clinton.</p>
+          <p>His passion for film led him to the University of Pennsylvania, where he taught courses in
+            film and social history.</p>
+      </article>
+      <article class="article">
+           <h4 class="article__intertitre">his debut in cinema</h4>
+          <img class="article__img" src="/public/img/image-page-gary-ross/GaryRoss3.webp" alt="Affiche du film Big"/>
+          <p class="article__legende"><em>Affiche du film Big</em></p>
+          <p>His film career began in 1988 with his first movie, "Big". The film, co-produced with Steven
+            Spielberg's sister Anne Spielberg, won the Oscar for Best Original Screenplay and grossed
+            100 million dollars. It was also nominated for a Golden Globe Award, a prestigious prize
+            awarded by the Hollywood Foreign Press Association.</p>
+          <p>Through his film adaptations, Gary Ross has demonstrated his ability to adapt literary works
+            for the screen, for example with "Seabiscuit: An American Legend", based on the book by
+            Laura Hillenbrand. However, he owes his success to his adaptation of Suzanne Collins'
+            "The Hunger Games" trilogy.
+            </p>
+      </article>
+      <article class="article">
+          <h4 class="article__intertitre">A few anecdotes</h4>
+          <p>For the anecdote, it was his daughters who introduced him to the Hunger Games trilogy. He
+            also immersed himself in reading the books overnight, captivated by the story. In view of his
+            commitment to the Hunger Games project, Gary Ross made the decision to cancel
+            production of Spider-Man 4. He directed only the first Hunger Games. This decision
+            demonstrated his passion for the story of Katniss Everdeen, the fictional character, heroine
+            and narrator of the Hunger Games trilogy.
+          </p>
+      </article>
+      <article class="article">
+           <h4 class="article__intertitre">A versatile figure</h4>
+          <p>Gary Ross’s filmography is a testament to his versatility, creativity and commitment to
+            storytelling in both politics and cinema. His influence continues today in the world of cinema.
+          </p>
+      </article>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__nav">
+      <a class="footer__nav" href="/en/A-propos.html">About us</a>
+      <a class="footer__nav" href="replique.html#galerie-en">Others projects</a>
+  </div>
+  <div class="footer__nav">
+      <a class="footer__nav" href="/en/contact.html">Contact</a>
+      <a class="footer__nav" href="/en/glossaire.html">Glossary</a> 
+  </div>
+  <div class="footer__element">
+    <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+    <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
+      noelie.tlh@gmail.com
+    </a>
+  </div>
+  <div class="footer__text">
+  <p class="footer__text"><strong>Legal notice</strong> </p>
+  <p class="footer__text">"project carried out as part of an educational exercise at the MMi department in Montbéliard, France”</p>
+  <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+    <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+  </a>
+</div>
+</footer>
+</body>
+</html>

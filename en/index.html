@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <title>Page d'accueil</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="icon" href="/public/icon/logo-hope_games1.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="/fr/index.html">
+      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
+    <a>
+      <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
+
+      aria-controls="mainNav" 
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header__menuBtn"
+      >
+      </a>
+      <nav x-show="menuIsOpen" 
+      id="mainNav" 
+      class="menu"
+      >
+      <a class="header__menu--icon" href="/fr/index.html">
+        <img class="header__menu--icon" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+      </a>  
+    <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
+    @click="menuIsOpen = ! menuIsOpen">
+      <ul class="menu__list">
+        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
+        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
+        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
+        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+      <div class="intro">
+        <h1 class="intro__title">Hope Games</h1>
+        <img class="intro__img-container" src="/public/img/image-page-d'accueil/Accueil1.webp" alt="affiche hunger games"/>
+        <a class="intro__link" href="/fr/replique.html">Et si un peu d'espoir est bénéfique, trop d'espoir est dangereux”</a>
+        <p class="intro__text">
+          Découvrez le monde fascinant d’Hunger Games et explorez la notion d'espoir à travers cette réplique touchante et profonde.
+          </p>
+          <img class="intro__icon" src="/public/icon/fleche_scroll.svg"> 
+      </div>
+    <section class="section__accueil">
+      <article class="accueil">
+        <h4 class="acccueil__title"> Hunger Games, the science-fiction film</h4>
+        <p>
+          : Film directed by Gary Ross, released in 2012 and which was a huge
+          success.  
+        </p>
+        <img class="accueil__img" src="/public/img/image-page-d'accueil/Accueil2.webp" alt="affiche the hunger games"/>
+        <a class="accueil__link" href="/fr/Film.html">Discover</a>
+      </article>
+      <article class="accueil">
+        <h4 class="accueil_title">Gary Ross: an astonishing career</h4>
+        <p class="accueil__text">
+          Gary Ross is a versatile figure in the world of cinema, and one who
+          continues to exert an influence on the industry today.
+        </p>
+        <img class="accueil__img" src="/public/img/image-page-d'accueil/Accueil3.webp" alt="Gary Ross"/>
+        <a class="accueil__link" href="/fr/Realisateur.html">Discover</a>
+      </article>
+      <article class="accueil">
+        <h4 class="accueil__title">Hope in Hunger Games</h4>
+        <p class="accueil__text">
+          These words are spoken by Coriolanus Snow, also known as President Snow, who is a fictional character in the Hunger Games trilogy.
+        </p>
+        <img class="accueil__img" src="/public/img/image-page-d'accueil/Accueil4.webp" alt="Le président Show"/>
+        <a class="accueil__link" href="/fr/replique.html">Discover</a>
+      </article>
+      <article class="accueil">
+        <h4 class="accueil__title">: Hunger Games : catching fire volume 2</h4>
+        <p class="accueil__text">“The catching Fire” follows on from the first volume of Suzanne Collins'
+          trilogy, which continues the story of Katniss.
+        </p>
+        <img class="accueil__img" src="/public/img/image-page-d'accueil/Accueil5.webp" alt="Couverture du livre Hunger Games, l'embrasement"/>
+        <a class="accueil__link" href="/fr/livre.html">Découvrir</a>
+      </article>
+      <article class="accueil">
+        <h4 class="accueil__title">The Hanging Tree : The Hunger Games Revolutionary Anthem
+        </h4>
+        <p class="accueil__text">
+          The song “the hanging tree” appears in the first part of Hunger Games
+          Mockingjay. It means “the hanging tree”. 
+        </p>
+        <img class="accueil__img" src="/public/img/image-page-d'accueil/Accueil6.webp" alt="pochette musique the hanging tree"/>
+        <a class="accueil__link" href="/fr/music.html">Découvrir</a>
+      </article>
+    </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__nav">
+          <a class="footer__nav" href="/en/A-propos.html">About us</a>
+          <a class="footer__nav" href="replique.html#galerie-en">Others projects</a>
+      </div>
+      <div class="footer__nav">
+          <a class="footer__nav" href="/en/contact.html">Contact</a>
+          <a class="footer__nav" href="/en/glossaire.html">Glossary</a> 
+      </div>
+      <div class="footer__element">
+        <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+        <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
+          noelie.tlh@gmail.com
+        </a>
+      </div>
+      <div class="footer__text">
+      <p class="footer__text"><strong>Legal notice</strong> </p>
+      <p class="footer__text">"project carried out as part of an educational exercise at the MMi department in Montbéliard, France”</p>
+      <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+        <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+      </a>
+    </div>
+  </footer>
+   
+</body>
+</html>
