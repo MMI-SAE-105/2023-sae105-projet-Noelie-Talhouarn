@@ -20,8 +20,6 @@
 }
 
 
-
-
 .header__menu--icon{
     
     top: 0;
@@ -38,4 +36,13 @@
     
     position: fixed; 
     height: 33px;
+}
+
+.header__language{
+    color: white;
+    position: fixed;
+    right: 75px;
+    font-size: 20px;
+    top: 23px;
+    
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
@@ -10,9 +10,10 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo--link" href="/fr/index.html">
+    <a class="header__logo--link" href="/en/index.html">
       <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
+    <a class="header__language" href="/fr/replique.html">fr</a>
     <a>
       <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
@@ -25,17 +26,18 @@
       id="mainNav" 
       class="menu"
       >
-      <a class="header__menu--icon" href="/fr/index.html">
+      <a class="header__menu--icon" href="/en/index.html">
         <img class="header__menu--icon" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
       </a>  
     <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
     @click="menuIsOpen = ! menuIsOpen">
       <ul class="menu__list">
-        <li><a class="menu__list--element" href="/fr/Film.html">Hunger Games, le film de sience fiction</a></li>
-        <li><a class="menu__list--element" href="/fr/Realisateur.html">Gary Ross : une carrière étonnante</a></li>
-        <li><a class="menu__list--element" href="/fr/replique.html">L'espoir dans Hunger Games</a></li>
-        <li><a class="menu__list--element" href="/fr/livre.html">Hunger Games : L'embrasement volume 2</a></li>
-        <li><a class="menu__list--element" href="/fr/music.html">The Hanging Tree : L'Hymne Révolutionnaire d'Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/en/Film.html">Hunger Games, the science fiction film</a></li>
+        <li><a class="menu__list--element" href="/en/Realisateur.html">Gary Ross: an astonishing career</a></li>
+        <li><a class="menu__list--element" href="/en/replique.html">Hope in Hunger Games</a></li>
+        <li><a class="menu__list--element" href="/en/livre.html">The Hunger Games: Catching Fire - The Explosive Sequel to
+          Katniss's Epic</a></li>
+        <li><a class="menu__list--element" href="/en/music.html">The Hanging Tree : The Hunger Games Revolutionary Anthem</a></li>
       </ul>
     </nav>
   </header>
@@ -43,7 +45,7 @@
     <img class="article__intro" src="/public/img/image-page-replique/L'espoir1.webp" alt="Couverture Livre L'embrasement de suzanne collins"/>
     <section class="section__article">
         <article class="article">
-          <p class="article__legende"><em>Le professeur Snow</em></p>
+          <p class="article__legende"><em>Professor Snow</em></p>
           <p class="article__info">Publié le 10 janvier 2024</p>
           <h3 class="article__title">Hope in Hunger Games</h3>
           <p class="article__text">The line, "And if a little hope is good, too much hope is dangerous," from the Hunger
@@ -100,8 +102,8 @@
     x-data="{
       URLimage: '', 
    }">
-       <h3 class="titre">Galerie</h3>
-   <p class="galerie__intro">Découvrez un aperçu des différents films sur lequel mes camarades ont basés leurs sites. Vous pouvez voir les noms des différents projets et de leur créateur.</p>
+       <h3 class="titre">To go further...</h3>
+   <p class="galerie__intro">Discover the previews of the various films on which my classmates have based their websites. You can see the names of the different projects and their creators..</p>
     <div class="galerie__container">
       <div class="image-container">
    <img class="image" src="/public/img/image-page-replique/AutreProjet1-mini.webp" alt="mer"
@@ -151,14 +153,14 @@
    @click="URLimage = '/public/img/image-page-replique/AutreProjet7-g.webp'"
    >
     <p class="image-text">“ScarInfo”</p>
-    <p class="image-text"> Matthis Boreaniz</p>
+    <p class="image-text">Matthis Boreaniz</p>
   </div>
   <div class="image-container">
    <img class="image" src="/public/img/image-page-replique/AutreProjet8-mini.webp" alt="escalier"
    @click="URLimage = '/public/img/image-page-replique/AutreProjet8-g.webp'"
    >
     <p class="image-text">“Paprik-IA”</p>
-    <p class="image-text"> Ronan Lefour</p>
+    <p class="image-text">Ronan Lefour</p>
   </div>
   <div class="image-container">
    <img class="image" src="/public/img/image-page-replique/AutreProjet9-mini.webp" alt="escalier"
@@ -202,12 +204,12 @@
   </div>
   
   </section>
-
 </main>
+
 <footer class="footer">
   <div class="footer__nav">
       <a class="footer__nav" href="/en/A-propos.html">About us</a>
-      <a class="footer__nav" href="replique.html#galerie-en">Others projects</a>
+      <a class="footer__nav" href="replique.html#galerie-en">Other projects</a>
   </div>
   <div class="footer__nav">
       <a class="footer__nav" href="/en/contact.html">Contact</a>
@@ -225,6 +227,7 @@
   <a href="https://butmmi.thomasjeu.fr/#/butmmi">
     <img class="footer__logo--mmi" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
   </a>
+  
 </div>
 </footer>
   </footer>
