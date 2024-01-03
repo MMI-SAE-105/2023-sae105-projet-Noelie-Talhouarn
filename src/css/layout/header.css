@@ -34,3 +34,7 @@
     color: white;
     text-decoration: none;
 }
+
+.header__language:active{
+    color: var(--couleur-tonique);
+}

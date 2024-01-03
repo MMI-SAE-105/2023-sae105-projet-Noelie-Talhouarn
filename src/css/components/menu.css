@@ -31,17 +31,21 @@
 }
 
 .menu__list--element {
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 500;
     text-decoration: none;
     font-family: 'inter', sans-serif;
     color: rgb(255, 255, 255);
 }
 
+.menu__list--element:active {
+    color: var(--couleur-tonique); /* Changez cette couleur selon vos préférences */
+}
+
 .menu__footer{
-    text-align: ;
+    margin-left: 0;
     padding: 0.8rem;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 400;
     color: white;
     
@@ -49,6 +53,7 @@
 }
 
 .menu__footer--logo{
+    padding: 0.8rem;
     height: 10vw;
 }
 
