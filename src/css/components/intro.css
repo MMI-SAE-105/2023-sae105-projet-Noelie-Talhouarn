@@ -26,7 +26,6 @@
     font-size: 30px;
     text-align: center;
     width: 90%; /* Ajouté pour augmenter la largeur du texte */
-    margin-top: -40px; /* Ajouté pour remonter le texte */
   }
 
 .intro__text{
