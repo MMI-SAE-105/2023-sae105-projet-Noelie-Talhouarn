@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <a class="header__logo--link" href="/en/index.html">
-      <img src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+  <header class="header header--bg">
+    <a class="header__logo-link" href="/en/index.html">
+      <img class="header__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
-    <a class="header__language" href="/fr/A-propos.html">fr</a>
+    <a class="header__language" href="/fr/index.html">fr</a>
     <a>
       <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
@@ -22,15 +22,16 @@
       class="header__menuBtn"
       >
       </a>
-      <nav x-show="menuIsOpen" 
+      <nav x-bind:class="{'menu--open': menuIsOpen}" 
       id="mainNav" 
       class="menu"
       >
-      <a class="header__menu--icon" href="/en/index.html">
-        <img class="header__menu--icon" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
-      </a>  
-    <img class="header__menu--iconClose" src="/public/icon/cross-close_white.svg" alt="croix"
+       
+    <img class="header__close" src="/public/icon/cross-close_white.svg" alt="croix"
     @click="menuIsOpen = ! menuIsOpen">
+    <a href="/en/index.html">
+      <img class="menu__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
+    </a>
       <ul class="menu__list">
         <li><a class="menu__list--element" href="/en/Film.html">Hunger Games, the science fiction film</a></li>
         <li><a class="menu__list--element" href="/en/Realisateur.html">Gary Ross: an astonishing career</a></li>
@@ -39,6 +40,26 @@
           Katniss's Epic</a></li>
         <li><a class="menu__list--element" href="/en/music.html">The Hanging Tree : The Hunger Games Revolutionary Anthem</a></li>
       </ul>
+        <div class="menu__footer">
+            <a class="menu__footer" href="/en/A-propos.html">About us</a>
+            <a class="menu__footer" href="replique.html#galerie-en">Others projects</a>
+        </div>
+        <div class="menu__footer">
+            <a class="menu__footer" href="/en/contact.html">Contact</a>
+            <a class="menu__footer" href="/en/glossaire.html">Glossary</a> 
+        </div>
+        <div class="menu__footer">
+          <a class="menu__footer" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+          <a class="menu__footer" href="mailto:noelie.tlh@gmail.com">
+            noelie.tlh@gmail.com
+          </a>
+        </div>
+        <div class="menu__footer--logo">
+        <a href="https://butmmi.thomasjeu.fr/#/butmmi">
+          <img class="menu__footer--logo" src="/public/icon/logo-mmi.svg" alt="Logo mmi" >
+        </a>
+      </div>
+    </footer>
     </nav>
   </header>
 

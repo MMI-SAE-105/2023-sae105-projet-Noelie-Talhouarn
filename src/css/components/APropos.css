@@ -1,9 +1,10 @@
 .APropos{
-    margin-top: 80px;
+    
     padding: 1rem;
 }
 
 .APropos__title{
+    margin-top: 80px;
     text-align: center;
     border-bottom: 3px solid var(--couleur-tonique);
     padding-bottom: 15px;

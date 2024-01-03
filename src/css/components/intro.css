@@ -5,6 +5,7 @@
 
 
 .intro__img-container {
+    top: 37px;
     width: 100%;
     position: relative;
     opacity: 0.4;
@@ -15,42 +16,41 @@
   
 .intro__link {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
     color: white;
-    font-size: 20px;
+    font-family: 'fresca';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    width: 90%; /* Ajouté pour augmenter la largeur du texte */
+    margin-top: -40px; /* Ajouté pour remonter le texte */
   }
 
 .intro__text{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     
-    padding: 1rem;
-    padding-bottom: 0;
+    padding: 0.5rem;
+    margin-top: 40px;
     
 }
 
 .intro__title{
+    z-index: 1;
+    position: relative;
+    bottom: -90px;
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-bottom: -30px;
     
-   
+    margin-bottom: -50px;
+     
 }
 
-.intro__link{
-    color: white;
-    font-family: 'fresca';
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-    width: 90%; /* Ajouté pour augmenter la largeur du texte */
-    margin-top: auto; /* Ajouté pour remonter le texte */
-}
 
 .intro__icon{
     display: block;
