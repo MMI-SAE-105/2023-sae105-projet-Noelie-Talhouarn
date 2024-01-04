@@ -1,11 +1,14 @@
 
 .carrousel img {
-    max-width: 100%; /* image responsive, largeur maxi */
-    height: 380px; /* hauteur "auto" */
-  
+    position: relative;
+    height: auto;
+    z-index: 0;
+    border: var(--couleur-secondaire) 5px solid;
+    
 
 }
 .carrousel_parent-ecrans {
+    
     display: flex;
     width: 100%;
     overflow-x: scroll; /* permet de scroller horizontalement */
@@ -23,40 +26,44 @@
     
 }
 .carrousel_ecran figure {
-    margin: 0; /* enlève les marges par défaut */
+  
+    
     display: flex; /* permet de mettre les enfants sur une ligne */
     align-items: center; /* centre verticalement les enfants */
     flex-direction: column; /* aligne les enfants verticalement */
     text-decoration: none; /* enlève le soulignement par défaut */
     color: rgb(255, 0, 0); /* couleur du texte */
     background-color: rgb(255, 255, 255);
-    gap: 0.5rem; /* espace entre les enfants */
+    
 }
+
+
 .carrousel {
   position: relative;
   margin-top: 30px;
-  perspective: 1000px; /* Ajoute une perspective 3D */
+  
+  
 }
 
 .carrousel_btn {
   position: absolute;
-  bottom: 0; /* Positionne les boutons en bas du carrousel */
-  width: 2rem;
-  height: 2rem;
-  background-color: rgb(255, 0, 0);
-  border: 2px solid rgb(237, 229, 229);
-  border-radius: 50%; /* Rend les boutons ronds */
-  display: grid;
-  place-content: center;
-  color: #ffffff;
+  top: 55%;
+  transform: translate(0, -50%);
+  padding: 14px;
+  border-radius: 0 3px 3px 0;
+  background: white;
+  transition: all .3s;
+  z-index: 1;
 }
 
 .carrousel_btn-avant {
-  left: 25px;
+  position: absolute;
+  left: 37.5px;
 }
 
 .carrousel_btn-apres {
-  right: 25px;
+  position: absolute;
+  right: 37.5px;
 }
 .caroussel_liste-liens {
   display: flex;
@@ -83,13 +90,7 @@
   transform: rotateY(40deg); /* Fait pivoter l'élément pour créer un effet 3D */
 }
 
-    
-.actif {
-  padding: 0.5rem;
-  text-decoration: none; /* enlève le soulignement par défaut */
-  color: rgb(0, 0, 0); /* couleur du texte */    
-}
-
+  
 .carrousel__sous-titre{
   font-family: 'roboto';
   font-size: 23px;
@@ -98,16 +99,42 @@
 }
 
 .carrousel__text{
-  position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   width: 100%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajoute une superposition semi-transparente */
+  padding: 1.5%;
+  background-color: var(--couleur-secondaire); /* Ajoute une superposition semi-transparente */
+  bottom: 1rem;
   color: #fff;
-  box-sizing: border-box;
+ 
   transition: background-color 0.5s ease-in-out;
   font-family: 'inter';
   font-size: 16px;
-  padding: 3%;
+  
 }
+
+.carrousel__btnrond {
+  
+  position: relative;
+  
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+
+  margin: 10px 2px 0 2px;
+  background-color: #c02f2f;
+  
+  display: inline-block;
+  transition: all .3s;
+  z-index: 100;
+  bottom: -60px;
+}
+
+.carrousel__btnrond--container{
+  display: flex;
+  justify-content: center; /* centre les boutons horizontalement */
+  position: absolute;
+  bottom: 1px;
+  width: 100%; /* assurez-vous que le conteneur s'étend sur toute la largeur du carrousel */
+}
+

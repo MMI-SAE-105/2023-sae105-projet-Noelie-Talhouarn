@@ -21,18 +21,19 @@
 
 
 .header__logo--menu{
-    margin-right: 40px;
+    margin-right: 43px;
     height: 30px;
 }
 
 .header__language{
     margin-top: 3px;
     font-size: 23px;
-    margin-left: 170px;
+    margin-left: 160px;
     color: white;
     text-decoration: none;
 }
 
 .header__language:active{
-    color: var(--couleur-tonique);
+    background-color: var(--couleur-tonique);
+    color: black;
 }

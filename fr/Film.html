@@ -13,7 +13,7 @@
     <a class="header__logo-link" href="/en/index.html">
       <img class="header__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
-    <a class="header__language" href="/fr/Film.html">fr</a>
+    <a class="header__language" href="/en/Film.html">fr</a>
     <a>
       <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
@@ -108,7 +108,7 @@
 
   <div class="carrousel">
   <p class="carrousel__sous-titre">Découvrez la suite de l'unviers captivant d'Hunger Games</p>
-  <div class="carrousel" x-data="{
+  <div class="carrousel_parent-ecrans" x-data="{
       hrefCourant: '#oeuvre-1', 
   }">
       <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
@@ -129,31 +129,36 @@
                           .id
       "
       >
+    
           <div id="Projet-1" class="carrousel_ecran">
               <figure>
-                  <img class="carrousel__img-1" src="/public/img/image-page-film/ImageCarrousel1.webp" alt="image Oeuvre 2">
+                  <img class="carrousel__img-1" src="/public/img/image-page-film/Imagecarrousel1.webp" alt="image Oeuvre 2">
                   <figcaption class="carrousel__text">Après avoir gagné, ils sont obligés de partir faire la Tournée de la victoire dans tous les districts...</figcaption>
           </figure>
           </div>
           <div id="Projet-2" class="carrousel_ecran">
               <figure>
-                  <img class="carrousel__img-2" src="/public/img/image-page-film/ImageCarrousel2.webp" alt="image Oeuvre 2">
-                  <figcaption class="carrousel__text">House before House, Utsunomiya, 2009</figcaption>
+                  <img class="carrousel__img-2" src="/public/img/image-page-film/Imagecarrousel2.webp" alt="image Oeuvre 2">
+                  <figcaption class="carrousel__text">Katniss Everdeen s'est réfugiée dans le District 13 après avoir détruit à jamais l'arène et les Jeux...</figcaption>
               </figure>
           </div>
           <div id="Projet-3" class="carrousel_ecran">
               <figure>
-                  <img class="carrousel__img-3" src="/public/img/image-page-film/ImageCarrousel3.webp" alt="image Oeuvre 3">
-                  <figcaption class="carrousel__text">Toilet in Nature, Chiba, Japan, 2012</figcaption>
+                  <img class="carrousel__img-3" src="/public/img/image-page-film/Imagecarrousel3.webp" alt="image Oeuvre 3">
+                  <figcaption class="carrousel__text">Alors que la nation de Panem est en pleine guerre, Katniss devra confronter le Président Snow dans un combat décisif...</figcaption>
               </figure>
           </div>
           <div id="Projet-4" class="carrousel_ecran">
               <figure>
-                  <img class="carrousel__img-4" src="/public/img/image-page-film/ImageCarrousel4.webp" alt="image Oeuvre 4">
-                  <figcaption class="carrousel__text">Serpentine  Gallery Pavillon, London, 2013</figcaption>
+                  <img class="carrousel__img-4" src="/public/img/image-page-film/Imagecarrousel4.webp" alt="image Oeuvre 4">
+                  <figcaption class="carrousel__text">La Ballade du Serpent et de l'oiseau chanteur est un préquel de la trilogie Hunger Games qui se déroule soixante-quatre ans plus tôt.</figcaption>
               </figure>
           </div>
-                  
+          <div class="carrousel__btnrond--container">
+            <span class="carrousel__btnrond" onclick="currentSlide(1)"></span> 
+            <span class="carrousel__btnrond" onclick="currentSlide(2)"></span>
+            
+          </div> 
           </div>
           
           

@@ -39,7 +39,8 @@
 }
 
 .menu__list--element:active {
-    color: var(--couleur-tonique); /* Changez cette couleur selon vos préférences */
+    color: rgb(0, 0, 0);
+    background-color: var(--couleur-tonique);
 }
 
 .menu__footer{
