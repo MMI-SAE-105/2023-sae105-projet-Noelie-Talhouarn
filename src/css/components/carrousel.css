@@ -1,140 +1,134 @@
 
-.carrousel img {
-    position: relative;
-    height: auto;
-    z-index: 0;
-    border: var(--couleur-secondaire) 5px solid;
-    
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%; /* image responsive, largeur maxi */
+  height: auto; /* hauteur "auto" */
 
 }
 .carrousel_parent-ecrans {
-    
-    display: flex;
-    width: 100%;
-    overflow-x: scroll; /* permet de scroller horizontalement */
-    scroll-behavior: smooth; /* animation de défilement */
-    scroll-snap-type: x mandatory; /* permet de scroller par blocs */
+  display: flex;
+  width: 100%;
+  overflow-x: scroll; /* permet de scroller horizontalement */
+  scroll-behavior: smooth; /* animation de défilement */
+  scroll-snap-type: x mandatory; /* permet de scroller par blocs */
 }
 .carrousel_ecran {
-  position: relative;
-  overflow: hidden;
-    width: 100%; /* largeur du parent pour chaque enfant */
-    flex: none;  /* permet de garder toute la largeur du parent */
-    scroll-snap-align: start; /* aligne les enfants par blocs */
-    margin-bottom: 23px;
-    
-    
+  
+  width: 100%; /* largeur du parent pour chaque enfant */
+  flex: none;  /* permet de garder toute la largeur du parent */
+  scroll-snap-align: start; /* aligne les enfants par blocs */
+  margin-bottom: 23px;
+  
 }
 .carrousel_ecran figure {
   
-    
-    display: flex; /* permet de mettre les enfants sur une ligne */
-    align-items: center; /* centre verticalement les enfants */
-    flex-direction: column; /* aligne les enfants verticalement */
-    text-decoration: none; /* enlève le soulignement par défaut */
-    color: rgb(255, 0, 0); /* couleur du texte */
-    background-color: rgb(255, 255, 255);
-    
+  margin: 0; /* enlève les marges par défaut */
+  display: flex; /* permet de mettre les enfants sur une ligne */
+  /*border: var(--couleur-secondaire) 2px solid; /* bordure */
+  align-items: center; /* centre verticalement les enfants */
+  flex-direction: column; /* aligne les enfants verticalement */
+  
+  text-decoration: none; /* enlève le soulignement par défaut */
+  color: rgb(255, 255, 255); /* couleur du texte */
+  /*background: var(--couleur-secondaire);*/
+  
+  gap: 0.5rem; /* espace entre les enfants */
+  font-family: 'inter', sans-serif;
+  font-size: 13px;
+  
 }
-
-
 .carrousel {
+  padding: 10px;
   position: relative;
-  margin-top: 30px;
-  
-  
 }
 
 .carrousel_btn {
-  position: absolute;
-  top: 55%;
-  transform: translate(0, -50%);
-  padding: 14px;
+position: absolute;
+top: 62%;
+
+transform: translateY(-50%); /* methode du point mort */
+width: 2rem;
+height: 2rem;
+padding: 16px;
   border-radius: 0 3px 3px 0;
-  background: white;
-  transition: all .3s;
-  z-index: 1;
+  background: rgba(0, 0, 0, .5);
+display: grid;
+place-content: center;
+color: #ffffff;
 }
 
 .carrousel_btn-avant {
-  position: absolute;
-  left: 37.5px;
+left: 9.5px;
 }
 
 .carrousel_btn-apres {
-  position: absolute;
-  right: 37.5px;
+right: 9.5px;
+}
+
+.carrousel_btn:active {
+background: rgba(225, 67, 5, 0.8);
+
 }
 .caroussel_liste-liens {
+  position: absolute;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 1rem;
-  margin-bottom: 13%;
-}
-
- .carrousel_lien{
-    padding: 0.5rem; /* padding haut/bas et gauche/droite */
-    background-color: var(--couleur-secondaire);
-    border-radius: 0.5rem; /* arrondi les coins */
-    text-decoration: none; /* enlève le soulignement par défaut */
-    color: rgb(0, 0, 0); /* couleur du texte */
-    font-size: 1rem; /* taille du texte */
-    font-weight: 500; /* graisse du texte */
-    
- }
- .carrousel_item {
-  transform: rotateY(40deg); /* Fait pivoter l'élément pour créer un effet 3D */
-}
-
+  margin: 0; /* enlève les marges par défaut */
+  padding: 0; /* enlève les padding par défaut */
+  list-style: none; /* enlève les puces par défaut */
   
-.carrousel__sous-titre{
-  font-family: 'roboto';
-  font-size: 23px;
-  padding: 5%;
+  margin-top: 285px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
+  gap: 0.5rem; /* espace entre les enfants */
+  left: 38%; /* déplace le conteneur vers la droite de 50% de la largeur du parent */
+  
+}
+.caroussel_lien {
+  display: inline-block; /* permet de mettre les enfants sur une ligne */
+ 
+ 
+  padding: 8px; /* espace entre le texte et le bord */
+  border: 2px solid var(--couleur-secondaire); /* bordure */
+  border-radius: 50%; /* arrondi de la bordure */
+  text-decoration: none; /* enlève le soulignement par défaut */
+  background-color: white;
+  height: 2px;
+  width: 2px;
+}
+.actif {
+  background-color: var(--couleur-tonique);
+  border: 2px solid var(--couleur-secondaire); /* bordure */
+  
+  
+
+}
+
+.caroussel_lien:focus {
+  background-color: var(--couleur-tonique);
+}
+
+.carrousel__legende {
   background-color: var(--couleur-secondaire);
+  margin-bottom: 50px;
+  padding: 0; /* enlève les padding par défaut */
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.carrousel__sous-titre{
+  margin-bottom: 100px;
 }
 
 .carrousel__text{
-  bottom: -50px;
-  left: 0;
-  width: 100%;
-  padding: 1.5%;
-  background-color: var(--couleur-secondaire); /* Ajoute une superposition semi-transparente */
-  bottom: 1rem;
-  color: #fff;
- 
-  transition: background-color 0.5s ease-in-out;
-  font-family: 'inter';
-  font-size: 16px;
-  
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 27.5px;
 }
 
-.carrousel__btnrond {
-  
-  position: relative;
-  
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-
-  margin: 10px 2px 0 2px;
-  background-color: #c02f2f;
-  
-  display: inline-block;
-  transition: all .3s;
-  z-index: 100;
-  bottom: -60px;
+.carrousel__text-4{
+  font-size: 24px;
 }
-
-.carrousel__btnrond--container{
-  display: flex;
-  justify-content: center; /* centre les boutons horizontalement */
-  position: absolute;
-  bottom: 1px;
-  width: 100%; /* assurez-vous que le conteneur s'étend sur toute la largeur du carrousel */
-}
-
