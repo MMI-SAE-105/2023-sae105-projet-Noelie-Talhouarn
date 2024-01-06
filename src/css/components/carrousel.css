@@ -60,11 +60,11 @@ color: #ffffff;
 }
 
 .carrousel_btn-avant {
-left: 9.5px;
+left: 10px;
 }
 
 .carrousel_btn-apres {
-right: 9.5px;
+right: 10px;
 }
 
 .carrousel_btn:active {
@@ -79,7 +79,7 @@ background: rgba(225, 67, 5, 0.8);
   padding: 0; /* enlève les padding par défaut */
   list-style: none; /* enlève les puces par défaut */
   
-  margin-top: 285px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
+  margin-top: 400px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
   gap: 0.5rem; /* espace entre les enfants */
   left: 38%; /* déplace le conteneur vers la droite de 50% de la largeur du parent */
   
@@ -110,10 +110,12 @@ background: rgba(225, 67, 5, 0.8);
 
 .carrousel__legende {
   background-color: var(--couleur-secondaire);
+  
   margin-bottom: 50px;
-  padding: 0; /* enlève les padding par défaut */
-  font-size: 10px;
-  font-weight: 700;
+  padding: 0.5rem; /* enlève les padding par défaut */
+  padding-bottom: 4rem;
+  font-size: 13px;
+  font-weight: 500;
   text-align: center;
   color: white;
 }
