@@ -40,13 +40,13 @@ img {
   
 }
 .carrousel {
-  padding: 10px;
+ 
   position: relative;
 }
 
 .carrousel_btn {
 position: absolute;
-top: 62%;
+top: 60%;
 
 transform: translateY(-50%); /* methode du point mort */
 width: 2rem;
@@ -60,15 +60,15 @@ color: #ffffff;
 }
 
 .carrousel_btn-avant {
-left: 10px;
+left: 0;
 }
 
 .carrousel_btn-apres {
-right: 10px;
+right: 0;
 }
 
 .carrousel_btn:active {
-background: rgba(225, 67, 5, 0.8);
+  background: rgba(225, 67, 5, 0.8);
 
 }
 .caroussel_liste-liens {
@@ -79,7 +79,7 @@ background: rgba(225, 67, 5, 0.8);
   padding: 0; /* enlève les padding par défaut */
   list-style: none; /* enlève les puces par défaut */
   
-  margin-top: 400px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
+  margin-top: 340px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
   gap: 0.5rem; /* espace entre les enfants */
   left: 38%; /* déplace le conteneur vers la droite de 50% de la largeur du parent */
   
@@ -89,7 +89,7 @@ background: rgba(225, 67, 5, 0.8);
  
  
   padding: 8px; /* espace entre le texte et le bord */
-  border: 2px solid var(--couleur-secondaire); /* bordure */
+  border: 2px solid black; /* bordure */
   border-radius: 50%; /* arrondi de la bordure */
   text-decoration: none; /* enlève le soulignement par défaut */
   background-color: white;
@@ -97,7 +97,7 @@ background: rgba(225, 67, 5, 0.8);
   width: 2px;
 }
 .actif {
-  background-color: var(--couleur-tonique);
+  background: rgba(225, 67, 5, 0.8);
   border: 2px solid var(--couleur-secondaire); /* bordure */
   
   
@@ -109,28 +109,25 @@ background: rgba(225, 67, 5, 0.8);
 }
 
 .carrousel__legende {
-  background-color: var(--couleur-secondaire);
+  background: black;
   
   margin-bottom: 50px;
   padding: 0.5rem; /* enlève les padding par défaut */
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   font-size: 13px;
   font-weight: 500;
-  text-align: center;
+  
   color: white;
 }
 
 .carrousel__sous-titre{
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .carrousel__text{
-  font-size: 24px;
+  font-size: 16px;
   color: black;
-  font-weight: 500;
-  margin-bottom: 27.5px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.carrousel__text-4{
-  font-size: 24px;
-}

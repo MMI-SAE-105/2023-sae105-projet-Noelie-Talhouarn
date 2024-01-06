@@ -124,57 +124,79 @@
         <p class="article__legende"><em>Books by Suzanne Collins </em></p>
     </article>
    </section>
-    <h3>The universe of Hunger Games</h3>                           
+   <section class="section__article">
+   <h3>The Hunger Games universe</h3>                           
 
-  <div class="carrousel">
-  <p class="carrousel__sous-titre">Discover the sequel to the captivating unviers of Hunger Games</p>
-  <div class="carrousel" x-data="{
-      hrefCourant: '#oeuvre-1', 
-  }">
-      <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
-          @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
-      >
-          &lt;
-      </button>
-      <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
-          @click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)"
-      >
-          >
-      </button>
-      <div class="carrousel_parent-ecrans" x-ref="parent"
-            @scroll.debounce.250ms.passive="
-      hrefCourant = '#'+
-                        [...$refs.parent.children]
-                          .find(e=>e.getBoundingClientRect().x>=0)
-                          .id
-      "
-      >
-          <div id="Projet-1" class="carrousel_ecran">
-              <figure>
-                  <img class="carrousel__img-1" src="/public/img/image-page-film/ImageCarrousel1.webp" alt="image Oeuvre 2">
-                  <figcaption class="carrousel__text">Après avoir gagné, ils sont obligés de partir faire la Tournée de la victoire dans tous les districts...</figcaption>
-          </figure>
-          </div>
-          <div id="Projet-2" class="carrousel_ecran">
-              <figure>
-                  <img class="carrousel__img-2" src="/public/img/image-page-film/ImageCarrousel2.webp" alt="image Oeuvre 2">
-                  <figcaption class="carrousel__text">House before House, Utsunomiya, 2009</figcaption>
-              </figure>
-          </div>
-          <div id="Projet-3" class="carrousel_ecran">
-              <figure>
-                  <img class="carrousel__img-3" src="/public/img/image-page-film/ImageCarrousel3.webp" alt="image Oeuvre 3">
-                  <figcaption class="carrousel__text">Toilet in Nature, Chiba, Japan, 2012</figcaption>
-              </figure>
-          </div>
-          <div id="Projet-4" class="carrousel_ecran">
-              <figure>
-                  <img class="carrousel__img-4" src="/public/img/image-page-film/ImageCarrousel4.webp" alt="image Oeuvre 4">
-                  <figcaption class="carrousel__text">Serpentine  Gallery Pavillon, London, 2013</figcaption>
-              </figure>
-          </div>
-                  
-          </div>
+   <div class="carrousel">
+   <p class="carrousel__sous-titre">Discover the rest of the captivating Hunger Games universe</p>
+    <div class="carrousel_parent-ecrans" x-data="{
+       hrefCourant: '#film-1',
+       scrollToSlide: function(slideId) {
+         this.hrefCourant = slideId;
+         this.$nextTick(() => {
+           const slide = this.$refs.parent.querySelector(slideId);
+           slide.scrollIntoView({ behavior: 'smooth' });
+         });
+       }
+   }"> 
+   
+   
+       <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+       @click="hrefCourant === '#film-1' ? scrollToSlide('#film-4') : $refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
+       >
+           &lt;
+       </button>
+       <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+       @click="hrefCourant === '#film-4' ? scrollToSlide('#film-1') : $refs.parent.scrollBy($refs.parent.clientWidth, 0)"
+       >
+           >
+       </button>
+       <div class="carrousel_parent-ecrans" x-ref="parent"
+             @scroll.debounce.250ms.passive="
+       hrefCourant = '#'+
+                         [...$refs.parent.children]
+                           .find(e=>e.getBoundingClientRect().x>=0)
+                           .id
+       "
+       >
+     
+           <div id="film-1" class="carrousel_ecran">
+               <figure>
+                 <p class="carrousel__text">Hunger Games Catching Fire, 2013</p>
+                   <img class="carrousel__img-1" src="/public/img/image-page-film/Imagecarrousel1-en.webp" alt="image Oeuvre 2">
+                   <figcaption class="carrousel__legende">This second part, Catching Fire, follows the story of Katniss Everdeen and Peeta Mellark who must go on the Victory Tour in all the districts because they won...</figcaption>
+               </figure>
+           </div>
+           <div id="film-2" class="carrousel_ecran">
+               <figure>
+                 <p class="carrousel__text">Hunger Games Mockingjay, partie 1, 2014</p>
+                   <img class="carrousel__img-2" src="/public/img/image-page-film/Imagecarrousel2-en.webp" alt="image Oeuvre 2">
+                   <figcaption class="carrousel__legende">This third part, part 1, features Katniss Everdeen who will take refuge in District 13 and will become the symbol of rebellion to give hope to an entire people...</figcaption>
+               </figure>
+           </div>
+           <div id="film-3" class="carrousel_ecran">
+               <figure>
+                 <p class="carrousel__text">Hunger Games Mockingjay, partie 2, 2015</p>
+                   <img class="carrousel__img-3" src="/public/img/image-page-film/Imagecarrousel3-en.webp" alt="image Oeuvre 3">
+                   <figcaption class="carrousel__legende">The second part of this last part, features Katniss who will confront President Snow in a decisive battle while the nation of Panem is in the middle of war...</figcaption>
+               </figure>
+           </div>
+           <div id="film-4" class="carrousel_ecran">
+               <figure>
+                 <p class="carrousel__text">Hunger games, prequel, 2023</p>
+                   <img class="carrousel__img-4" src="/public/img/image-page-film/Imagecarrousel4-en.webp" alt="image Oeuvre 4">
+                   <figcaption class="carrousel__legende">It's a prequel to the Hunger Games trilogy, focusing on the character of Coriolanus Snow, before he became the tyrannical president of the Republic of Panem.</figcaption>
+               </figure>
+           </div>
+           </div>
+           <ul class="caroussel_liste-liens">
+             <li><a href="#film-1" :class="{actif:hrefCourant==='#film-1'}" class="caroussel_lien"></a></li>
+             <li><a href="#film-2" :class="{actif:hrefCourant==='#film-2'}" class="caroussel_lien"></a></li>
+             <li><a href="#film-3" :class="{actif:hrefCourant==='#film-3'}" class="caroussel_lien"></a></li>
+             <li><a href="#film-4" :class="{actif:hrefCourant==='#film-4'}" class="caroussel_lien"></a></li>
+           </ul> 
+         </div>
+       </div>
           
           
       </div>
