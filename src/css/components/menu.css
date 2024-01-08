@@ -46,7 +46,7 @@
 .menu__footer{
     margin-left: 0;
     padding: 0.8rem;
-    font-size: 3vw;
+    font-size: 15px;
     font-weight: 400;
     color: white;
     
@@ -55,7 +55,16 @@
 
 .menu__footer--logo{
     padding: 0.8rem;
-    height: 10vw;
+    height: 65px;
+}
+
+.menu__language{
+    font-size: 22px;
+    margin-top: -53px;
+    padding: 1.5rem;
+    margin-right: 8px;
+    float: right; 
+    color: white;
 }
 
 .noscroll{
