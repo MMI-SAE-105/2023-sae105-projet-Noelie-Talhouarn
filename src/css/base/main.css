@@ -26,17 +26,31 @@ h4{
 }
 
 h3{
+    
     font-family: 'Anek Gurmukhi';
     font-weight: 800;
     font-size: 37px;
     color: var(--couleur-tonique);
+    margin-top: 25px;
 }
 
-h2{
-    font-family: 'fresca';
-    font-weight: 400;
-    font-size: 20px;
-    color: white;
+h2 {
+    font-family: 'Inter';
+    color: var(--couleur-secondaire);
+    font-weight: 700;
+    font-size: 27px;
+    padding-top: 50px;	
+    position: relative; /* Ajoutez cette ligne pour positionner le pseudo-élément par rapport à cet élément */
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px; /* Changez cette valeur pour déplacer le trait vers le bas */
+    width: 100%;
+    height: 3px;
+    background-color: var(--couleur-tonique);
 }
 
 a{
