@@ -21,6 +21,7 @@
 @import "components/frise.css";
 @import "components/carrousel.css";
 @import "components/galerie.css";
+@import "components/Page404.css";
 
 /* Librairies */
 @import "vendors/normalize.css";
