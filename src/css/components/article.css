@@ -21,8 +21,21 @@
 }
 
 .article__info{
-    margin-top: 20px;
+    color: rgb(116, 116, 116);
+    
 }
+
+.article__info-link {
+    color: rgb(116, 116, 116);
+    top: 20px;
+}
+
+.article__legende--first{
+    margin-bottom: 20px;
+}
+
+
+
 
 .article__intertitre{
     margin-bottom: 20px;

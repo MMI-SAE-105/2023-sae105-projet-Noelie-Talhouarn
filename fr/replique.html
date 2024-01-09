@@ -13,7 +13,9 @@
     <a class="header__logo-link" href="/fr/index.html">
       <img class="header__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
-    <a class="header__language" href="/en/replique.html">en</a>
+    <a href="../en/replique.html" onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+" class="header__language">EN</a>
     <a>
       <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
@@ -65,8 +67,9 @@
     <img class="article__intro" src="/public/img/image-page-replique/L'espoir1.webp" alt="Couverture Livre L'embrasement de suzanne collins"/>
     <section class="section__article">
         <article class="article">
-          <p class="article__legende"><em>Le professeur Snow</em></p>
-          <p class="article__info">Publié le 10 janvier 2024</p>
+          <p class="article__legende article__legende--first"><em>Le professeur Snow</em></p>
+          <a class="article__info-link" href="/fr/A-propos.html">par Noélie Talhouarn</a>
+          <p class="article__info">publié le 10 janvier 2024</p>
           <h3 class="article__title">L’espoir dans Hunger Games</h3>
           <p class="article__text">La réplique "Et si un peu d'espoir est bénéfique, trop d'espoir est dangereux" tirée de la série Hunger Games, met en lumière deux aspects différents de l'espoir et nous invite à réfléchir à son pouvoir et à ses limites.</p>  
         </article>
@@ -93,15 +96,12 @@
             <p class="article__text">Aujourd’hui, cette réplique prend parfaitement place dans la vie réelle. En effet, elle nous rappelle que l'espoir est une force puissante mais complexe. Il peut motiver, inspirer et guider, mais il peut aussi tromper, décevoir et aveugler. On peut également associer cette réplique à une autre d’Hunger Games : « L'espoir est la seule chose plus forte que la peur » prononcé également par le président Snow.</p>
         </article>
     </section>
-    <section>
-        <h3>Extrait de la réplique</h3>
-        <video src="https://xn--nolie-talhouarn-cnb.fr/videos/BA-fr_Hunger-Games__Projet-s1.webm" poster="/public/img/image-page-d'accueil/Accueil1.webp" controls></video>
-    </section>
+
     <section id="galerie" class="galerie"
     x-data="{
       URLimage: '', 
    }">
-       <h3 class="titre">Pour aller plus loin...</h3>
+       <h2 class="titre">Pour aller plus loin...</h2>
    <p class="galerie__intro">Découvrez un aperçu des différents films sur lequel mes camarades ont basés leurs sites. Vous pouvez voir les noms des différents projets et de leur créateur.</p>
     <div class="galerie__container">
       <div class="image-container">

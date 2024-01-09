@@ -13,7 +13,10 @@
     <a class="header__logo-link" href="/fr/index.html">
       <img class="header__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
-    <a class="header__language" href="/en/A-propos.html">en</a>
+    <a href="../en/A-propos.html" onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+" class="header__language">EN</a>
+    
     <a>
       <img class="header__logo--menu" src="/public/icon/menu-open_white.svg" alt="logo"
 
@@ -29,7 +32,7 @@
        
     <img class="header__close" src="/public/icon/cross-close_white.svg" alt="croix"
     @click="menuIsOpen = ! menuIsOpen">
-    <a href="/fr/index.htfr">
+    <a href="/fr/index.html">
       <img class="menu__logo" src="/public/icon/logo-hope_games1.svg" alt="Logo Hope Games"/>
     </a>
       <ul class="menu__list">
@@ -63,6 +66,7 @@
   </header>
 
     <main>
+    
     <div class="APropos">
         <h3 class="APropos__title">A propos</h3>
         <img class="APropos__img" src="/public/img/Avatar.webp" alt="avatar">
