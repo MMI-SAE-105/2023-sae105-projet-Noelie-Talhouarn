@@ -33,7 +33,7 @@
 /* Polices de caractère */
 @font-face {
     font-family: 'Bank Gothic';
-    src: url(/src/fonts/Bank-Gothic-Medium.otf);
+    src: url(/src/fonts/Bank-Gothic-Medium.woff);
     font-weight: normal;
     font-style: normal;
 }

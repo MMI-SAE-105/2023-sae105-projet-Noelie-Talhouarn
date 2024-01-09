@@ -127,3 +127,48 @@ right: 0;
   margin-bottom: 10px;
 }
 
+.carrousel2{
+  margin: 20px;
+  padding-bottom: 40px;
+}
+
+.carrousel2__img{
+  margin-top: 15px;
+  max-width: 100%; /* image responsive, largeur maxi */
+  height: auto; /* hauteur "auto" */
+}
+
+.carrousel2_lien{
+  display: inline-block; /* permet de mettre les enfants sur une ligne */
+ 
+ 
+  padding: 6px; /* espace entre le texte et le bord */
+  border: 2px solid black; /* bordure */
+  border-radius: 50%; /* arrondi de la bordure */
+  text-decoration: none; /* enlève le soulignement par défaut */
+  background-color: white;
+  height: 1px;
+  width: 1px;
+}
+.actif{
+  background: rgba(225, 67, 5, 0.8);
+  border: 2px solid var(--couleur-secondaire); /* bordure */
+  
+
+}
+
+.caroussel2_liste-liens {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* enlève les marges par défaut */
+  padding: 0; /* enlève les padding par défaut */
+  list-style: none; /* enlève les puces par défaut */
+  
+  margin-top: -20px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
+  gap: 0.7rem; /* espace entre les enfants */
+  left: 34%; /* déplace le conteneur vers la droite de 50% de la largeur du parent */
+  
+}
+

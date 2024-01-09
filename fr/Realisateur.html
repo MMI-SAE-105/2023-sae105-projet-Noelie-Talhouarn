@@ -101,7 +101,70 @@
           <p>La filmographie de Gary Ross témoigne de sa polyvalence, de sa créativité et de son engagement dans la narration, tant en politique qu'en cinéma. Son influence se poursuit encore aujourd'hui dans le monde du cinéma.</p>
       </article>
     </section>
-
+    <div class="carrousel2">
+      <h2 class="carrousel__titre">Exploration Ciné : Les réalisations de Gary Ross</h2>
+      <p class="carrousel__sous-titre">Découvrez les différents films que Gary Ross a réalisé.</p>
+      <div class="carrousel" x-data="{
+         hrefCourant: '#film-1', 
+      }">
+          <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+              @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
+          >
+              &lt;
+          </button>
+          <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+              @click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)"
+          >
+              >
+          </button>
+          <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="
+          hrefCourant = '#'+
+                            [...$refs.parent.children]
+                             .find(e=>e.getBoundingClientRect().x>=0)
+                             .id
+          "
+          >
+              <div id="film-1" class="carrousel_ecran">
+                  <figure>
+                      <img  class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage4.webp" alt="image film 1">
+                      <figcaption class="carrousel__text">Film fantastique américain réalisé par Gary Ross, sorti en 1998</figcaption>
+              </figure>
+              </div>
+              <div id="film-2" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage3.webp" alt="image film 2">
+                      <figcaption class="carrousel__text">Film américain réalisé par Gary Ross, sorti en 2003</figcaption>
+                  </figure>
+              </div>
+              <div id="film-3" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage5.webp" alt="image film 3">
+                      <figcaption class="carrousel__text">Film de science-fiction américain écrit et réalisé par Gary Ross, sorti en 2012</figcaption>
+                  </figure>
+              </div>
+              <div id="film-4" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage1.webp" alt="image film 5">
+                      <figcaption class="carrousel__text">Film de guerre dramatique américano-chinois réalisé par Gary Ross, sorti en 2016</figcaption>
+                  </figure>
+              </div>
+              <div id="film-5" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage2.webp" alt="image film 4">
+                      <figcaption class="carrousel__text">Film américain réalisé par Gary Ross, sorti en 2018</figcaption>
+                  </figure>
+              </div>
+              
+      </div>
+      <ul class="caroussel2_liste-liens">
+          <li><a href="#film-1" :class="{actif:hrefCourant==='#film-1'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-2" :class="{actif:hrefCourant==='#film-2'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-3" :class="{actif:hrefCourant==='#film-3'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-4" :class="{actif:hrefCourant==='#film-4'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-5" :class="{actif:hrefCourant==='#film-5'}" class="carrousel2_lien"></a></li>
+      </ul>
+  </div>
 </main>
 
 <footer class="footer">

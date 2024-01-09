@@ -127,6 +127,70 @@
           </p>
       </article>
     </section>
+    <div class="carrousel2">
+      <h2 class="carrousel__titre">Cine Exploration: Gary Ross's achievements</h2>
+      <p class="carrousel__sous-titre">Discover all films Gary Ross has directed.</p>
+      <div class="carrousel" x-data="{
+         hrefCourant: '#film-1', 
+      }">
+          <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+              @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
+          >
+              &lt;
+          </button>
+          <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+              @click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)"
+          >
+              >
+          </button>
+          <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="
+          hrefCourant = '#'+
+                            [...$refs.parent.children]
+                             .find(e=>e.getBoundingClientRect().x>=0)
+                             .id
+          "
+          >
+              <div id="film-1" class="carrousel_ecran">
+                  <figure>
+                      <img  class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage4.webp" alt="image film 1">
+                      <figcaption class="carrousel__text">American fantasy film directed by Gary Ross, released in 1998.</figcaption>
+              </figure>
+              </div>
+              <div id="film-2" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage3.webp" alt="image film 2">
+                      <figcaption class="carrousel__text">American film directed by Gary Ross, released in 2003</figcaption>
+                  </figure>
+              </div>
+              <div id="film-3" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage5.webp" alt="image film 3">
+                      <figcaption class="carrousel__text">American science-fiction film written and directed by Gary Ross, released in 2012</figcaption>
+                  </figure>
+              </div>
+              <div id="film-4" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage1.webp" alt="image film 5">
+                      <figcaption class="carrousel__text">American-Chinese war drama film directed by Gary Ross, released in 2016</figcaption>
+                  </figure>
+              </div>
+              <div id="film-5" class="carrousel_ecran">
+                  <figure>
+                      <img class="carrousel2__img" src="/public/img/image-page-gary-ross/CarrouselRealisateurImage2.webp" alt="image film 4">
+                      <figcaption class="carrousel__text">American film directed by Gary Ross, released in 2018</figcaption>
+                  </figure>
+              </div>
+              
+      </div>
+      <ul class="caroussel2_liste-liens">
+          <li><a href="#film-1" :class="{actif:hrefCourant==='#film-1'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-2" :class="{actif:hrefCourant==='#film-2'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-3" :class="{actif:hrefCourant==='#film-3'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-4" :class="{actif:hrefCourant==='#film-4'}" class="carrousel2_lien"></a></li>
+          <li><a href="#film-5" :class="{actif:hrefCourant==='#film-5'}" class="carrousel2_lien"></a></li>
+      </ul>
+  </div>
 
 </main>
 

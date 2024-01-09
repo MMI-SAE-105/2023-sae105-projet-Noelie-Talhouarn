@@ -128,12 +128,12 @@
   
   
       <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
-      @click="hrefCourant === '#film-1' ? scrollToSlide('#film-4') : $refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
+      @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
       >
           &lt;
       </button>
       <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
-      @click="hrefCourant === '#film-4' ? scrollToSlide('#film-1') : $refs.parent.scrollBy($refs.parent.clientWidth, 0)"
+      @click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)"
       >
           >
       </button>

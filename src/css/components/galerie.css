@@ -1,5 +1,5 @@
 .galerie{
-  margin: 20px;
+  
   position: relative;
 }
 
@@ -66,7 +66,7 @@
 
 
 .galerie__container{
-  
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
