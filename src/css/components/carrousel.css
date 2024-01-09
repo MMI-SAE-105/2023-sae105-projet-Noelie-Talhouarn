@@ -97,8 +97,6 @@ right: 0;
   background: rgba(225, 67, 5, 0.8);
   border: 2px solid var(--couleur-secondaire); /* bordure */
   
-  
-
 }
 
 .caroussel_lien:focus {
@@ -119,7 +117,7 @@ right: 0;
 
 .carrousel__sous-titre{
 
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .carrousel__text{
