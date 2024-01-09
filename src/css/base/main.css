@@ -55,12 +55,12 @@ h2::before {
 
 a{
     font-family: 'Inter';
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
     color: black;
 }
 
-p{
+p{  margin-top: 20px;
     font-family: 'Inter';
     font-size: 15px;
     color: black;
