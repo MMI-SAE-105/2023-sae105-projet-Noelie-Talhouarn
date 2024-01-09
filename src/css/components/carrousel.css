@@ -37,7 +37,7 @@ img {
   
 }
 .carrousel {
- 
+  
   position: relative;
 }
 
@@ -76,7 +76,7 @@ right: 0;
   padding: 0; /* enlève les padding par défaut */
   list-style: none; /* enlève les puces par défaut */
   
-  margin-top: 340px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
+  margin-top: 350px; /* ajoutez une marge en haut pour déplacer le conteneur vers le bas */
   gap: 0.5rem; /* espace entre les enfants */
   left: 38%; /* déplace le conteneur vers la droite de 50% de la largeur du parent */
   
@@ -85,13 +85,13 @@ right: 0;
   display: inline-block; /* permet de mettre les enfants sur une ligne */
  
  
-  padding: 8px; /* espace entre le texte et le bord */
+  padding: 6px; /* espace entre le texte et le bord */
   border: 2px solid black; /* bordure */
   border-radius: 50%; /* arrondi de la bordure */
   text-decoration: none; /* enlève le soulignement par défaut */
   background-color: white;
-  height: 2px;
-  width: 2px;
+  height: 1px;
+  width: 1px;
 }
 .actif {
   background: rgba(225, 67, 5, 0.8);
@@ -106,7 +106,7 @@ right: 0;
 }
 
 .carrousel__legende {
-  background: black;
+  
   
   margin-bottom: 50px;
   padding: 0.5rem; /* enlève les padding par défaut */
@@ -114,7 +114,7 @@ right: 0;
   font-size: 13px;
   font-weight: 500;
   
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .carrousel__sous-titre{
