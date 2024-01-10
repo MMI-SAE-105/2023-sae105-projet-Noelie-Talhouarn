@@ -51,7 +51,7 @@
             <a class="menu__footer" href="/en/glossaire.html">Glossary</a> 
         </div>
         <div class="menu__footer">
-          <a class="menu__footer" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+          <a class="menu__footer" href="/en/A-propos.html">Noélie Talhouarn B1</a>
           <a class="menu__footer" href="mailto:noelie.tlh@gmail.com">
             noelie.tlh@gmail.com
           </a>
@@ -136,24 +136,16 @@
    <div class="carrousel">
    <p class="carrousel__sous-titre">Discover the rest of the captivating Hunger Games universe</p>
     <div class="carrousel_parent-ecrans" x-data="{
-       hrefCourant: '#film-1',
-       scrollToSlide: function(slideId) {
-         this.hrefCourant = slideId;
-         this.$nextTick(() => {
-           const slide = this.$refs.parent.querySelector(slideId);
-           slide.scrollIntoView({ behavior: 'smooth' });
-         });
-       }
-   }"> 
-   
+       hrefCourant: '#film-1', 
+    }">
    
        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
-       @click="hrefCourant === '#film-1' ? scrollToSlide('#film-4') : $refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
+       @click="$refs.parent.scrollBy(-$refs.parent.clientWidth, 0)"
        >
            &lt;
        </button>
        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
-       @click="hrefCourant === '#film-4' ? scrollToSlide('#film-1') : $refs.parent.scrollBy($refs.parent.clientWidth, 0)"
+       @click="$refs.parent.scrollBy($refs.parent.clientWidth, 0)"
        >
            >
        </button>
@@ -203,10 +195,7 @@
            </ul> 
          </div>
        </div>
-          
-          
-      </div>
-    </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -219,7 +208,7 @@
         <a class="footer__nav" href="/en/glossaire.html">Glossary</a> 
     </div>
     <div class="footer__element">
-      <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</li>
+      <a class="footer__element" href="/en/A-propos.html">Noélie Talhouarn B1</a>
       <a class="footer__element" href="mailto:noelie.tlh@gmail.com">
         noelie.tlh@gmail.com
       </a>
