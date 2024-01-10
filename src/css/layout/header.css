@@ -32,8 +32,3 @@
     color: white;
     text-decoration: none;
 }
-
-.header__language:active{
-    background-color: var(--couleur-tonique);
-    color: black;
-}
