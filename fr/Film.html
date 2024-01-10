@@ -102,7 +102,7 @@
     <article>
         <h4 class="article__intertitre">Une Adaptation Puissante</h4>
         <p class="article__text">Le film Hunger Games est une excellente adaptation cinématographique fidèle et puissante du <a href="/fr/livre.html"> livre de Suzanne Collins</a>.</p>
-        <img class="article__img" src="/public/img/image-page-film/ScienceFiction3.webp" alt="Katniss et peeta"/>
+        <img class="article__img" src="/public/img/image-page-film/ScienceFiction3.webp" alt="livre de Suzanne collins"/>
         <p class="article__legende"><em>Les livres de Suzanne Collins</em></p>
     </article>
    </section>
@@ -116,15 +116,8 @@
   <div class="carrousel">
   <p class="carrousel__sous-titre">Découvrez la suite de l'univers captivant d'Hunger Games</p>
    <div class="carrousel_parent-ecrans" x-data="{
-      hrefCourant: '#film-1',
-      scrollToSlide: function(slideId) {
-        this.hrefCourant = slideId;
-        this.$nextTick(() => {
-          const slide = this.$refs.parent.querySelector(slideId);
-          slide.scrollIntoView({ behavior: 'smooth' });
-        });
-      }
-  }"> 
+      hrefCourant: '#film-1', 
+    }"> 
   
   
       <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
